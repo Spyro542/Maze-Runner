@@ -1,6 +1,7 @@
 #pragma once
 
 int Get_Input();
+void Clear_Inputs();
 
 enum Keys
 {

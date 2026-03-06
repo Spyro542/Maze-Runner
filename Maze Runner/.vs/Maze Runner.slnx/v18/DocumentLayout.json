@@ -1,25 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze Runner\\",
+  "WorkspaceRootPath": "C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze Runner\\Maze Runner.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Maze Runner.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|solutionrelative:Maze Runner.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze Runner\\Input.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Input.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|solutionrelative:Input.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze Runner\\Input.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Input.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|solutionrelative:Input.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze Runner\\Screen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Screen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|solutionrelative:Screen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze Runner\\Screen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Screen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|solutionrelative:Screen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -36,11 +36,11 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Input.cpp",
-              "DocumentMoniker": "C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze Runner\\Input.cpp",
+              "DocumentMoniker": "C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Input.cpp",
               "RelativeDocumentMoniker": "Input.cpp",
-              "ToolTip": "C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze Runner\\Input.cpp",
+              "ToolTip": "C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Input.cpp",
               "RelativeToolTip": "Input.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAEcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-03-06T08:55:20.432Z",
               "EditorCaption": ""
@@ -49,11 +49,11 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Input.h",
-              "DocumentMoniker": "C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze Runner\\Input.h",
+              "DocumentMoniker": "C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Input.h",
               "RelativeDocumentMoniker": "Input.h",
-              "ToolTip": "C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze Runner\\Input.h",
+              "ToolTip": "C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Input.h",
               "RelativeToolTip": "Input.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-03-06T08:36:26.529Z",
               "EditorCaption": ""
@@ -62,11 +62,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Maze Runner.cpp",
-              "DocumentMoniker": "C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze Runner\\Maze Runner.cpp",
+              "DocumentMoniker": "C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Maze Runner.cpp",
               "RelativeDocumentMoniker": "Maze Runner.cpp",
-              "ToolTip": "C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze Runner\\Maze Runner.cpp",
+              "ToolTip": "C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Maze Runner.cpp",
               "RelativeToolTip": "Maze Runner.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-03-06T07:00:13.596Z",
               "EditorCaption": ""
@@ -75,27 +75,25 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Screen.h",
-              "DocumentMoniker": "C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze Runner\\Screen.h",
+              "DocumentMoniker": "C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Screen.h",
               "RelativeDocumentMoniker": "Screen.h",
-              "ToolTip": "C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze Runner\\Screen.h",
+              "ToolTip": "C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Screen.h",
               "RelativeToolTip": "Screen.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-03-06T07:04:12.418Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-06T07:04:12.418Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Screen.cpp",
-              "DocumentMoniker": "C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze Runner\\Screen.cpp",
+              "DocumentMoniker": "C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Screen.cpp",
               "RelativeDocumentMoniker": "Screen.cpp",
-              "ToolTip": "C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze Runner\\Screen.cpp",
+              "ToolTip": "C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Screen.cpp",
               "RelativeToolTip": "Screen.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-03-06T07:02:11.925Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-06T07:02:11.925Z"
             }
           ]
         }
