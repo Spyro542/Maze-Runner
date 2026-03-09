@@ -1,7 +1,8 @@
 #pragma once
 void SetColour(int Text_Colour, int Background_Colour);
 void Goto_XY(int X, int Y);
-void flip(char New_Screen[129][33]);
+void flip(char New_Screen[129][33], int New_Screen_Colour[129][33][2]);
+void Intialize();
 
 enum Color
 {
@@ -38,6 +39,11 @@ enum Color
 	Full_Bright_Purple = 13 + 27,
 	Full_Light_Yellow = 14 + 27,
 	Full_Bright_White = 15 + 27,
+};
+enum Screen_Colour_Target
+{
+	Text,
+	Background
 };
 
 /*

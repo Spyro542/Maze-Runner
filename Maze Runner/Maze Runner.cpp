@@ -10,12 +10,22 @@
 
 
 char New_Screen[129][33];
+int New_Screen_Colour[129][33][2];
 
 
 
 int main()
 {
+	Intialize();
 	SetColour(Green, Black);
+	for (size_t Y = 0; Y < 33; Y++)
+	{
+		for (size_t X = 0; X < 128; X++)
+		{
+			New_Screen_Colour[X][Y][Text] = Bright_White;
+			New_Screen_Colour[X][Y][Background] = Black;
+		}
+	}
 	system("cls");
 
 	
@@ -25,7 +35,7 @@ int main()
 	{
 		auto Frame_Start = clock();
 		auto Start_Time = std::chrono::system_clock::now();	//Delta time
-		flip(New_Screen);	//print screen changes
+		flip(New_Screen, New_Screen_Colour);	//print screen changes
 
 
 		Clear_Inputs();
@@ -37,9 +47,18 @@ int main()
 			for (size_t i = 0; i < 128; i++)
 			{
 				New_Screen[i][i1] = '#';
-				//std::cout << "#";
+				if (i < 64)
+				{
+					New_Screen_Colour[i][i1][Text] = Blue;
+					New_Screen_Colour[i][i1][Background] = Black;
+				}
+				else
+				{
+					New_Screen_Colour[i][i1][Text] = Bright_White;
+					New_Screen_Colour[i][i1][Background] = Black;
+				}
 			}
-			//std::cout << "\n";
+			
 		}
 
 		switch (Get_Input()) {
@@ -50,9 +69,9 @@ int main()
 				for (size_t i = 0; i < 128; i++)
 				{
 					New_Screen[i][i1] = 'W';
-					//std::cout << "#";
+					New_Screen_Colour[i][i1][Text] = Green;
+					New_Screen_Colour[i][i1][Background] = Black;
 				}
-				//std::cout << "\n";
 			}
 			break;
 		case Down:
@@ -95,9 +114,6 @@ int main()
 			Goto_XY(0, 33);
 			std::cout << "FPS: " << CLOCKS_PER_SEC / Frame_Time << "Fps" << std::endl;
 		}
-		
-		
-		//system("cls");
 	}
 
 }
