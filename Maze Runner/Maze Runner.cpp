@@ -1,29 +1,59 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <iostream>
 #include <chrono>
-
+#include <Windows.h>
+#include <string>
 
 
 #include "Input.h"
 #include "Screen.h"
 
 
+char New_Screen[129][33];
+
 
 
 int main()
 {
 	SetColour(Green, Black);
+	system("cls");
+
+	
+
 
 	while (true)
 	{
-		auto Start_Time = std::chrono::system_clock::now();
+		auto Frame_Start = clock();
+		auto Start_Time = std::chrono::system_clock::now();	//Delta time
+		flip(New_Screen);	//print screen changes
+
+
 		Clear_Inputs();
 		//while (Get_Input() > 0){}	//Stop Repeated keystrokes
 		//while (!(Get_Input() > 0))
 		
+		for (size_t i1 = 0; i1 < 32; i1++)
+		{
+			for (size_t i = 0; i < 128; i++)
+			{
+				New_Screen[i][i1] = '#';
+				//std::cout << "#";
+			}
+			//std::cout << "\n";
+		}
+
 		switch (Get_Input()) {
 		case Up:
-			std::cout << "Up\n";
+			//std::cout << "Up\n";
+			for (size_t i1 = 0; i1 < 32; i1++)
+			{
+				for (size_t i = 0; i < 128; i++)
+				{
+					New_Screen[i][i1] = 'W';
+					//std::cout << "#";
+				}
+				//std::cout << "\n";
+			}
 			break;
 		case Down:
 			std::cout << "Down\n";
@@ -48,21 +78,26 @@ int main()
 			break;
 		
 		}
-		for (size_t i = 0; i < 16; i++)
-		{
-			for (size_t i = 0; i < 16; i++)
-			{
-				std::cout << "#";
-			}
-			std::cout << "\n";
-		}
-		auto Current_Time = std::chrono::system_clock::now();
-		std::chrono::duration<double> Delta_Time = Current_Time - Start_Time;
+		//std::cout << std::endl;
+		
+		
 		
 
-		std::cout << "elapsed time: " << Delta_Time.count() << "s"
-			<< std::endl;
-		system("cls");
+		auto Current_Time = std::chrono::system_clock::now();
+		std::chrono::duration<double> Delta_Time = Current_Time - Start_Time;
+		auto Frame_Time = clock() - Frame_Start;
+				
+		Goto_XY(0, 32);
+		std::cout << "Elapsed time: " << Delta_Time.count() << "s" << std::endl;
+
+		if (Frame_Time > 0)
+		{
+			Goto_XY(0, 33);
+			std::cout << "FPS: " << CLOCKS_PER_SEC / Frame_Time << "Fps" << std::endl;
+		}
+		
+		
+		//system("cls");
 	}
 
 }

@@ -1,2 +1,5 @@
-﻿  Maze Runner.cpp
+﻿  Screen.cpp
+C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Screen.cpp(48,15): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Screen.cpp(72,21): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Screen.cpp(72,24): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
   Maze Runner.vcxproj -> C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\x64\Debug\Maze Runner.exe

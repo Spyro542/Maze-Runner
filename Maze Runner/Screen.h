@@ -1,5 +1,8 @@
 #pragma once
 void SetColour(int Text_Colour, int Background_Colour);
+void Goto_XY(int X, int Y);
+void flip(char New_Screen[129][33]);
+
 enum Color
 {
 	Black,
