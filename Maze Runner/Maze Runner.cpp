@@ -7,9 +7,9 @@
 
 
 #include "Input.h"
-#include "Screen.h"
 #include "Map.h"
 #include "Levels.h"
+#include "Terminal.h"
 
 
 char New_Screen[129][33];
@@ -17,49 +17,51 @@ int New_Screen_Colour[129][33][2];
 std::vector<double> pos = { 1,1 };
 float movespeed = 150;
 
+struct Vector_2D
+{
+	float X = 0;
+	float Y = 0;
+};
+struct Position_2D
+{
+	int X = 0;
+	int Y = 0;
+};
 
 int main()
 {
-	Intialize();
-	SetColour(Green, Black);
-	for (size_t Y = 0; Y < 33; Y++)
-	{
-		for (size_t X = 0; X < 128; X++)
-		{
-			New_Screen_Colour[X][Y][Text] = Bright_White;
-			New_Screen_Colour[X][Y][Background] = Black;
-		}
-	}
-	system("cls");
+	Terminal Screen;
+	
+	Screen.Intialize();
 
-	Map Level_1_Map(Level_1);
-	Level_1_Map.Draw_Maze();
-	Goto_XY(pos[0], pos[1]);
-	SetColour(Yellow, Black);
+	Screen.SetColour(Screen.Green, Screen.Black);
+	
+	Map Level_1_Map(Level_1);	//Make the map with level 1
+	Level_1_Map.Draw_Maze();	//Draw Level 1
+
+	//Place player
+	Screen.Goto_XY(pos[0], pos[1]);
+	Screen.SetColour(Screen.Yellow, Screen.Black);
 	std::cout << "v";
 
 	while (true)
 	{
 		auto Frame_Start = clock();
 		auto Start_Time = std::chrono::system_clock::now();	//Delta time
-		//flip(New_Screen, New_Screen_Colour);	//print screen changes
 
 
-		Clear_Inputs();
-		//while (Get_Input() > 0){}	//Stop Repeated keystrokes
-		//while (!(Get_Input() > 0))
-		SetColour(Yellow, Black);
+		Screen.SetColour(Screen.Yellow, Screen.Black);
 		switch (Get_Input()) {
 		case Up:
 		{
 			auto Current_Time = std::chrono::system_clock::now();
 			std::chrono::duration<double> Delta_Time = Current_Time - Start_Time;
-			Goto_XY(std::round(pos[0]), std::round(pos[1]));
+			Screen.Goto_XY(std::round(pos[0]), std::round(pos[1]));
 			std::cout << " ";
 			pos[1] -= (movespeed * Delta_Time.count());
 			if (!Level_1_Map.Get_Walls(std::round(pos[0]), std::round(pos[1])))
 			{
-				Goto_XY(std::round(pos[0]), std::round(pos[1]));
+				Screen.Goto_XY(std::round(pos[0]), std::round(pos[1]));
 				std::cout << "^";
 				pos[0] = std::round(pos[0]);
 			}
@@ -73,12 +75,12 @@ int main()
 		{
 			auto Current_Time = std::chrono::system_clock::now();
 			std::chrono::duration<double> Delta_Time = Current_Time - Start_Time;
-			Goto_XY(std::round(pos[0]), std::round(pos[1]));
+			Screen.Goto_XY(std::round(pos[0]), std::round(pos[1]));
 			std::cout << " ";
 			pos[1] += (movespeed * Delta_Time.count());
 			if (!Level_1_Map.Get_Walls(std::round(pos[0]), std::round(pos[1])))
 			{
-				Goto_XY(std::round(pos[0]), std::round(pos[1]));
+				Screen.Goto_XY(std::round(pos[0]), std::round(pos[1]));
 				std::cout << "v";
 				pos[0] = std::round(pos[0]);
 			}
@@ -92,12 +94,12 @@ int main()
 		{
 			auto Current_Time = std::chrono::system_clock::now();
 			std::chrono::duration<double> Delta_Time = Current_Time - Start_Time;
-			Goto_XY(std::round(pos[0]), std::round(pos[1]));
+			Screen.Goto_XY(std::round(pos[0]), std::round(pos[1]));
 			std::cout << " ";
 			pos[0] -= (movespeed * Delta_Time.count());
 			if (!Level_1_Map.Get_Walls(std::round(pos[0]), std::round(pos[1])))
 			{
-				Goto_XY(std::round(pos[0]), std::round(pos[1]));
+				Screen.Goto_XY(std::round(pos[0]), std::round(pos[1]));
 				std::cout << "<";
 				pos[1] = std::round(pos[1]);
 			}
@@ -111,12 +113,12 @@ int main()
 		{
 			auto Current_Time = std::chrono::system_clock::now();
 			std::chrono::duration<double> Delta_Time = Current_Time - Start_Time;
-			Goto_XY(std::round(pos[0]), std::round(pos[1]));
+			Screen.Goto_XY(std::round(pos[0]), std::round(pos[1]));
 			std::cout << " ";
 			pos[0] += (movespeed * Delta_Time.count());
 			if (!Level_1_Map.Get_Walls(std::round(pos[0]), std::round(pos[1])))
 			{
-				Goto_XY(std::round(pos[0]), std::round(pos[1]));
+				Screen.Goto_XY(std::round(pos[0]), std::round(pos[1]));
 				std::cout << ">";
 				pos[1] = std::round(pos[1]);
 			}
@@ -127,9 +129,9 @@ int main()
 		}
 			break;
 		case Enter:
-			return 0;
 			break;
 		case Esc:
+			return 0;
 			break;
 		case Return:
 			break;
@@ -138,7 +140,7 @@ int main()
 		
 		}
 		//std::cout << std::endl;
-		SetColour(Green, Black);
+		Screen.SetColour(Screen.Green, Screen.Black);
 		
 		
 
@@ -146,12 +148,12 @@ int main()
 		std::chrono::duration<double> Delta_Time = Current_Time - Start_Time;
 		auto Frame_Time = clock() - Frame_Start;
 				
-		Goto_XY(0, 32);
+		Screen.Goto_XY(0, 32);
 		std::cout << "Elapsed time: " << Delta_Time.count() << "s" << std::endl;
 
 		if (Frame_Time > 0)
 		{
-			Goto_XY(0, 33);
+			Screen.Goto_XY(0, 33);
 			std::cout << "FPS: " << CLOCKS_PER_SEC / Frame_Time << "Fps" << std::endl;
 		}
 	}

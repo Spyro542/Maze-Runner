@@ -130,13 +130,17 @@
     <ClCompile Include="Input.cpp" />
     <ClCompile Include="Map.cpp" />
     <ClCompile Include="Maze Runner.cpp" />
+    <ClCompile Include="Movement.cpp" />
     <ClCompile Include="Screen.cpp" />
+    <ClCompile Include="Terminal.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Input.h" />
     <ClInclude Include="Levels.h" />
     <ClInclude Include="Map.h" />
+    <ClInclude Include="Movement.h" />
     <ClInclude Include="Screen.h" />
+    <ClInclude Include="Terminal.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

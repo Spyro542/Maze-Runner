@@ -24,8 +24,19 @@ void Intialize()	//setup of screen
 	if (hwnd != NULL) GetWindowRect(hwnd, &rcClip); //get window borders
 	if (hwnd != NULL) ClipCursor(&rcClip); //keep cursor inside the window
 	//Dealing with Window size and posistion
-
 	
+	//Hide the console cursor
+	HANDLE consoleHandle = GetStdHandle(STD_OUTPUT_HANDLE);
+	CONSOLE_CURSOR_INFO info;
+	info.dwSize = 100;
+	info.bVisible = FALSE;
+	SetConsoleCursorInfo(consoleHandle, &info);
+	//Hide the console cursor
+	PCONSOLE_FONT_INFOEX fontData;
+	fontData->cbSize = sizeof(fontData);
+
+
+	SetCurrentConsoleFontEx(hwnd, false, fontData);
 
 	system("cls");
 }
