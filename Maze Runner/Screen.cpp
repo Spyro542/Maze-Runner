@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS 1
 #include "Screen.h"
 #include <iostream>
 #include <Windows.h>
@@ -23,6 +24,8 @@ void Intialize()	//setup of screen
 	if (hwnd != NULL) GetWindowRect(hwnd, &rcClip); //get window borders
 	if (hwnd != NULL) ClipCursor(&rcClip); //keep cursor inside the window
 	//Dealing with Window size and posistion
+
+	
 
 	system("cls");
 }
@@ -113,46 +116,47 @@ void flip(char New_Screen[129][33], int New_Screen_Colour[129][33][2])
 	}
 	
 }
-//void flip(char New_Screen[129][33], int New_Screen_Colour[129][33][2])
-//{
-//	bool Print_Line = false;
-//	std::string Print_Line_Content;
-//
-//	//Compare the old screen to the new one and if any changes on a line reprint that line in place
-//	/*for (size_t Y = 0; Y < Screen_Size_Y; Y++)
-//	{
-//		for (size_t X = 0; X < Screen_Size_X; X++)
-//		{
-//			Print_Line_Content += New_Screen[X][Y];
-//			if (Current_Screen[X][Y] != New_Screen[X][Y])
-//			{
-//				Print_Line = true;
-//
-//				Current_Screen[X][Y] = New_Screen[X][Y];
-//			}
-//		}
-//		if (Print_Line)
-//		{
-//			Goto_XY(0, Y);
-//			std::cout << Print_Line_Content;
-//			Print_Line_Content = "";
-//			Print_Line = false;
-//		}
-//	}*/
-//	
-//	for (size_t X = 0; X < Screen_Size_X; X++)
-//	{
-//		for (size_t Y = 0; Y < Screen_Size_Y; Y++)
-//		{
-//			if (Current_Screen[X][Y] != New_Screen[X][Y])
-//			{
-//				Goto_XY(X, Y);
-//				std::cout << New_Screen[X][Y];
-//				Current_Screen[X][Y] = New_Screen[X][Y];
-//			}
-//		}
-//	}
-//}
+
+void flip_map(char New_Screen[129][33])
+{
+	bool Print_Line = false;
+	std::string Print_Line_Content;
+
+	//Compare the old screen to the new one and if any changes on a line reprint that line in place
+	for (size_t Y = 0; Y < Screen_Size_Y; Y++)
+	{
+		for (size_t X = 0; X < Screen_Size_X; X++)
+		{
+			Print_Line_Content += New_Screen[X][Y];
+			if (Current_Screen[X][Y] != New_Screen[X][Y])
+			{
+				Print_Line = true;
+
+				Current_Screen[X][Y] = New_Screen[X][Y];
+			}
+		}
+		if (Print_Line)
+		{
+			Goto_XY(0, Y);
+			std::cout << Print_Line_Content;
+			Print_Line_Content = "";
+			Print_Line = false;
+		}
+	}
+	
+	/*for (size_t X = 0; X < Screen_Size_X; X++)
+	{
+		for (size_t Y = 0; Y < Screen_Size_Y; Y++)
+		{
+			if (Current_Screen[X][Y] != New_Screen[X][Y])
+			{
+				Goto_XY(X, Y);
+				std::cout << New_Screen[X][Y];
+				Current_Screen[X][Y] = New_Screen[X][Y];
+			}
+		}
+	}*/
+}
 
 void Goto_XY(int X, int Y)
 {
