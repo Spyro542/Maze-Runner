@@ -3,83 +3,142 @@
 #include <chrono>
 #include <Windows.h>
 #include <string>
+#include <vector>
 
 
 #include "Input.h"
 #include "Screen.h"
+#include "Map.h"
+#include "Levels.h"
 
 
 char New_Screen[129][33];
-
+int New_Screen_Colour[129][33][2];
+std::vector<double> pos = { 1,1 };
+float movespeed = 150;
 
 
 int main()
 {
+	Intialize();
 	SetColour(Green, Black);
+	for (size_t Y = 0; Y < 33; Y++)
+	{
+		for (size_t X = 0; X < 128; X++)
+		{
+			New_Screen_Colour[X][Y][Text] = Bright_White;
+			New_Screen_Colour[X][Y][Background] = Black;
+		}
+	}
 	system("cls");
 
-	
-
+	Map Level_1_Map(Level_1);
+	Level_1_Map.Draw_Maze();
+	Goto_XY(pos[0], pos[1]);
+	SetColour(Yellow, Black);
+	std::cout << "v";
 
 	while (true)
 	{
 		auto Frame_Start = clock();
 		auto Start_Time = std::chrono::system_clock::now();	//Delta time
-		flip(New_Screen);	//print screen changes
+		//flip(New_Screen, New_Screen_Colour);	//print screen changes
 
 
 		Clear_Inputs();
 		//while (Get_Input() > 0){}	//Stop Repeated keystrokes
 		//while (!(Get_Input() > 0))
-		
-		for (size_t i1 = 0; i1 < 32; i1++)
-		{
-			for (size_t i = 0; i < 128; i++)
-			{
-				New_Screen[i][i1] = '#';
-				//std::cout << "#";
-			}
-			//std::cout << "\n";
-		}
-
+		SetColour(Yellow, Black);
 		switch (Get_Input()) {
 		case Up:
-			//std::cout << "Up\n";
-			for (size_t i1 = 0; i1 < 32; i1++)
+		{
+			auto Current_Time = std::chrono::system_clock::now();
+			std::chrono::duration<double> Delta_Time = Current_Time - Start_Time;
+			Goto_XY(std::round(pos[0]), std::round(pos[1]));
+			std::cout << " ";
+			pos[1] -= (movespeed * Delta_Time.count());
+			if (!Level_1_Map.Get_Walls(std::round(pos[0]), std::round(pos[1])))
 			{
-				for (size_t i = 0; i < 128; i++)
-				{
-					New_Screen[i][i1] = 'W';
-					//std::cout << "#";
-				}
-				//std::cout << "\n";
+				Goto_XY(std::round(pos[0]), std::round(pos[1]));
+				std::cout << "^";
+				pos[0] = std::round(pos[0]);
 			}
+			else
+			{
+				pos[1] += 1;
+			}
+		}
 			break;
 		case Down:
-			std::cout << "Down\n";
+		{
+			auto Current_Time = std::chrono::system_clock::now();
+			std::chrono::duration<double> Delta_Time = Current_Time - Start_Time;
+			Goto_XY(std::round(pos[0]), std::round(pos[1]));
+			std::cout << " ";
+			pos[1] += (movespeed * Delta_Time.count());
+			if (!Level_1_Map.Get_Walls(std::round(pos[0]), std::round(pos[1])))
+			{
+				Goto_XY(std::round(pos[0]), std::round(pos[1]));
+				std::cout << "v";
+				pos[0] = std::round(pos[0]);
+			}
+			else
+			{
+				pos[1] -= 1;
+			}
+		}
 			break;
 		case Left:
-			std::cout << "Left\n";
+		{
+			auto Current_Time = std::chrono::system_clock::now();
+			std::chrono::duration<double> Delta_Time = Current_Time - Start_Time;
+			Goto_XY(std::round(pos[0]), std::round(pos[1]));
+			std::cout << " ";
+			pos[0] -= (movespeed * Delta_Time.count());
+			if (!Level_1_Map.Get_Walls(std::round(pos[0]), std::round(pos[1])))
+			{
+				Goto_XY(std::round(pos[0]), std::round(pos[1]));
+				std::cout << "<";
+				pos[1] = std::round(pos[1]);
+			}
+			else
+			{
+				pos[0] += 1;
+			}
+		}
 			break;
 		case Right:
-			std::cout << "Right\n";
+		{
+			auto Current_Time = std::chrono::system_clock::now();
+			std::chrono::duration<double> Delta_Time = Current_Time - Start_Time;
+			Goto_XY(std::round(pos[0]), std::round(pos[1]));
+			std::cout << " ";
+			pos[0] += (movespeed * Delta_Time.count());
+			if (!Level_1_Map.Get_Walls(std::round(pos[0]), std::round(pos[1])))
+			{
+				Goto_XY(std::round(pos[0]), std::round(pos[1]));
+				std::cout << ">";
+				pos[1] = std::round(pos[1]);
+			}
+			else
+			{
+				pos[0] -= 1;
+			}
+		}
 			break;
 		case Enter:
-			std::cout << "Enter\n";
+			return 0;
 			break;
 		case Esc:
-			std::cout << "Esc\n";
 			break;
 		case Return:
-			std::cout << "Return\n";
 			break;
 		case Interact:
-			std::cout << "Interact\n";
 			break;
 		
 		}
 		//std::cout << std::endl;
-		
+		SetColour(Green, Black);
 		
 		
 
@@ -95,9 +154,6 @@ int main()
 			Goto_XY(0, 33);
 			std::cout << "FPS: " << CLOCKS_PER_SEC / Frame_Time << "Fps" << std::endl;
 		}
-		
-		
-		//system("cls");
 	}
 
 }
