@@ -3,15 +3,17 @@
 class Map
 {
 public:
-	Map(std::vector<std::vector<bool>> Level);
+	Map(std::vector<std::vector<int>> Level);
 	~Map();
 
 	void Draw_Maze();
 	bool Get_Walls(int X, int Y);
+	void Update_Maze(int X, int Y, int tile);
+	void New_Maze(std::vector<std::vector<int>> Level);
 
 private:
 	void Goto_XY(int X, int Y);
-	std::vector <std::vector<bool>> Walls;
+	std::vector <std::vector<int>> Walls;
 	void SetColour(int textColor, int bgColor);
 	
 	enum Color

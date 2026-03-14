@@ -23,6 +23,13 @@ void Terminal::Intialize()
 	SetConsoleCursorInfo(consoleHandle, &info);
 	//Hide the console cursor
 
+	/*PCONSOLE_FONT_INFOEX fontData;
+	fontData->cbSize = sizeof(fontData);
+
+
+	SetCurrentConsoleFontEx(hwnd, false, fontData);*/
+
+
 	system("cls");
 }
 

@@ -10,6 +10,7 @@
 #include "Map.h"
 #include "Levels.h"
 #include "Terminal.h"
+#include "Maze_Algorithm.h"
 
 
 char New_Screen[129][33];
@@ -31,12 +32,18 @@ struct Position_2D
 int main()
 {
 	Terminal Screen;
-	
+	// initialize the terminal
 	Screen.Intialize();
-
 	Screen.SetColour(Screen.Green, Screen.Black);
+	// initialize the terminal
+
+	//Generate Random Maze
+	Maze_Algorithm Maze_Generator;
+	Maze_Generator.Recursive();
+	//Generate Random Maze
+
 	
-	Map Level_1_Map(Level_1);	//Make the map with level 1
+	Map Level_1_Map(Maze_Generator.Get_Level());	//Make the map with level 1
 	Level_1_Map.Draw_Maze();	//Draw Level 1
 
 	//Place player
@@ -136,6 +143,13 @@ int main()
 		case Return:
 			break;
 		case Interact:
+			system("cls");
+			Maze_Generator.Recursive();
+			//Generate Random Maze
+
+
+			Level_1_Map.New_Maze(Maze_Generator.Get_Level());
+			Level_1_Map.Draw_Maze();	//Draw Level 1
 			break;
 		
 		}

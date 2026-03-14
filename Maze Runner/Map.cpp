@@ -3,7 +3,7 @@
 #include <vector>
 #include <iostream>
 
-Map::Map(std::vector<std::vector<bool>> Level)
+Map::Map(std::vector<std::vector<int>> Level)
 {
 	Walls = Level;
 }
@@ -18,11 +18,25 @@ void Map::Draw_Maze()
 	{
 		for (size_t X = 0; X < Walls.size(); X++)
 		{
-			if (Walls[X][Y])
+			if (Walls[X][Y] == 1)
 			{
 				Goto_XY(Y, X);
-				SetColour(Bright_White, Bright_White);
-				std::cout << "#";
+				SetColour(White, Bright_White);
+				std::cout << (char)176;
+				SetColour(Black, Black);
+			}
+			if (Walls[X][Y] == 2)
+			{
+				Goto_XY(Y, X);
+				SetColour(White, Gray);
+				std::cout << (char)176;
+				SetColour(Black, Black);
+			}
+			if (Walls[X][Y] == 100)
+			{
+				Goto_XY(Y, X);
+				SetColour(Yellow, Black);
+				std::cout << 'O';
 				SetColour(Black, Black);
 			}
 		}
@@ -40,6 +54,17 @@ bool Map::Get_Walls(int X, int Y)
 		return false;
 	}
 }
+
+void Map::Update_Maze(int X, int Y, int tile)
+{
+	Walls[Y][X] = tile;
+}
+
+void Map::New_Maze(std::vector<std::vector<int>> Level)
+{
+	Walls = Level;
+}
+
 
 
 

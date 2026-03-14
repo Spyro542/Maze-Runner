@@ -1,50 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\0andet92.UNI\\Downloads\\New folder\\Maze-Runner\\Maze Runner\\",
+  "WorkspaceRootPath": "C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|C:\\Users\\0andet92.UNI\\Downloads\\New folder\\Maze-Runner\\Maze Runner\\Screen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|solutionrelative:Screen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Maze_Algorithm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|solutionrelative:Maze_Algorithm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|C:\\Users\\0andet92.UNI\\Downloads\\New folder\\Maze-Runner\\Maze Runner\\Map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Maze_Algorithm.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|solutionrelative:Maze_Algorithm.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|solutionrelative:Map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|C:\\Users\\0andet92.UNI\\Downloads\\New folder\\Maze-Runner\\Maze Runner\\Maze Runner.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|solutionrelative:Maze Runner.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|C:\\Users\\0andet92.UNI\\Downloads\\New folder\\Maze-Runner\\Maze Runner\\Terminal.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|solutionrelative:Terminal.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|C:\\Users\\0andet92.UNI\\Downloads\\New folder\\Maze-Runner\\Maze Runner\\Terminal.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|solutionrelative:Terminal.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|C:\\Users\\0andet92.UNI\\Downloads\\New folder\\Maze-Runner\\Maze Runner\\Map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|solutionrelative:Map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|C:\\Users\\0andet92.UNI\\Downloads\\New folder\\Maze-Runner\\Maze Runner\\Screen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|solutionrelative:Screen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|C:\\Users\\0andet92.UNI\\Downloads\\New folder\\Maze-Runner\\Maze Runner\\Input.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|solutionrelative:Input.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|C:\\Users\\0andet92.UNI\\Downloads\\New folder\\Maze-Runner\\Maze Runner\\Movement.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|solutionrelative:Movement.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|C:\\Users\\0andet92.UNI\\Downloads\\New folder\\Maze-Runner\\Maze Runner\\Levels.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|solutionrelative:Levels.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|C:\\Users\\0andet92.UNI\\Downloads\\New folder\\Maze-Runner\\Maze Runner\\Input.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|solutionrelative:Input.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Maze Runner.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|solutionrelative:Maze Runner.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,148 +30,72 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Terminal.cpp",
-              "DocumentMoniker": "C:\\Users\\0andet92.UNI\\Downloads\\New folder\\Maze-Runner\\Maze Runner\\Terminal.cpp",
-              "RelativeDocumentMoniker": "Terminal.cpp",
-              "ToolTip": "C:\\Users\\0andet92.UNI\\Downloads\\New folder\\Maze-Runner\\Maze Runner\\Terminal.cpp",
-              "RelativeToolTip": "Terminal.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-03-10T16:00:58.277Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Terminal.h",
-              "DocumentMoniker": "C:\\Users\\0andet92.UNI\\Downloads\\New folder\\Maze-Runner\\Maze Runner\\Terminal.h",
-              "RelativeDocumentMoniker": "Terminal.h",
-              "ToolTip": "C:\\Users\\0andet92.UNI\\Downloads\\New folder\\Maze-Runner\\Maze Runner\\Terminal.h",
-              "RelativeToolTip": "Terminal.h",
-              "ViewState": "AgIAABMAAAAAAAAAAAAiwDYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-03-10T15:59:02.292Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Movement.h",
-              "DocumentMoniker": "C:\\Users\\0andet92.UNI\\Downloads\\New folder\\Maze-Runner\\Maze Runner\\Movement.h",
-              "RelativeDocumentMoniker": "Movement.h",
-              "ToolTip": "C:\\Users\\0andet92.UNI\\Downloads\\New folder\\Maze-Runner\\Maze Runner\\Movement.h",
-              "RelativeToolTip": "Movement.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-03-10T15:36:45.341Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Levels.h",
-              "DocumentMoniker": "C:\\Users\\0andet92.UNI\\Downloads\\New folder\\Maze-Runner\\Maze Runner\\Levels.h",
-              "RelativeDocumentMoniker": "Levels.h",
-              "ToolTip": "C:\\Users\\0andet92.UNI\\Downloads\\New folder\\Maze-Runner\\Maze Runner\\Levels.h",
-              "RelativeToolTip": "Levels.h",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAADkAAABTAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-03-10T10:17:34.144Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Map.cpp",
-              "DocumentMoniker": "C:\\Users\\0andet92.UNI\\Downloads\\New folder\\Maze-Runner\\Maze Runner\\Map.cpp",
-              "RelativeDocumentMoniker": "Map.cpp",
-              "ToolTip": "C:\\Users\\0andet92.UNI\\Downloads\\New folder\\Maze-Runner\\Maze Runner\\Map.cpp",
-              "RelativeToolTip": "Map.cpp",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwCEAAAAMAAAAAAAAAA==",
+              "Title": "Maze Runner.cpp",
+              "DocumentMoniker": "C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Maze Runner.cpp",
+              "RelativeDocumentMoniker": "Maze Runner.cpp",
+              "ToolTip": "C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Maze Runner.cpp",
+              "RelativeToolTip": "Maze Runner.cpp",
+              "ViewState": "AgIAAIMAAAAAAAAAAIAwwJUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-03-10T08:47:38.721Z",
+              "WhenOpened": "2026-03-06T07:00:13.596Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Map.h",
+              "DocumentMoniker": "C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Map.h",
+              "RelativeDocumentMoniker": "Map.h",
+              "ToolTip": "C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Map.h",
+              "RelativeToolTip": "Map.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-03-13T23:44:56.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Map.cpp",
+              "DocumentMoniker": "C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Map.cpp",
+              "RelativeDocumentMoniker": "Map.cpp",
+              "ToolTip": "C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Map.cpp",
+              "RelativeToolTip": "Map.cpp",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-03-13T13:23:47.819Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Map.h",
-              "DocumentMoniker": "C:\\Users\\0andet92.UNI\\Downloads\\New folder\\Maze-Runner\\Maze Runner\\Map.h",
-              "RelativeDocumentMoniker": "Map.h",
-              "ToolTip": "C:\\Users\\0andet92.UNI\\Downloads\\New folder\\Maze-Runner\\Maze Runner\\Map.h",
-              "RelativeToolTip": "Map.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-03-10T08:46:14.991Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Input.cpp",
-              "DocumentMoniker": "C:\\Users\\0andet92.UNI\\Downloads\\New folder\\Maze-Runner\\Maze Runner\\Input.cpp",
-              "RelativeDocumentMoniker": "Input.cpp",
-              "ToolTip": "C:\\Users\\0andet92.UNI\\Downloads\\New folder\\Maze-Runner\\Maze Runner\\Input.cpp",
-              "RelativeToolTip": "Input.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Title": "Maze_Algorithm.cpp",
+              "DocumentMoniker": "C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Maze_Algorithm.cpp",
+              "RelativeDocumentMoniker": "Maze_Algorithm.cpp",
+              "ToolTip": "C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Maze_Algorithm.cpp",
+              "RelativeToolTip": "Maze_Algorithm.cpp",
+              "ViewState": "AgIAACkBAAAAAAAAAAAkwDkBAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-03-06T08:55:20.432Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Input.h",
-              "DocumentMoniker": "C:\\Users\\0andet92.UNI\\Downloads\\New folder\\Maze-Runner\\Maze Runner\\Input.h",
-              "RelativeDocumentMoniker": "Input.h",
-              "ToolTip": "C:\\Users\\0andet92.UNI\\Downloads\\New folder\\Maze-Runner\\Maze Runner\\Input.h",
-              "RelativeToolTip": "Input.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-03-06T08:36:26.529Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Maze Runner.cpp",
-              "DocumentMoniker": "C:\\Users\\0andet92.UNI\\Downloads\\New folder\\Maze-Runner\\Maze Runner\\Maze Runner.cpp",
-              "RelativeDocumentMoniker": "Maze Runner.cpp",
-              "ToolTip": "C:\\Users\\0andet92.UNI\\Downloads\\New folder\\Maze-Runner\\Maze Runner\\Maze Runner.cpp",
-              "RelativeToolTip": "Maze Runner.cpp",
-              "ViewState": "AgIAAHwAAAAAAAAAAAASwDMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-03-06T07:00:13.596Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Screen.h",
-              "DocumentMoniker": "C:\\Users\\0andet92.UNI\\Downloads\\New folder\\Maze-Runner\\Maze Runner\\Screen.h",
-              "RelativeDocumentMoniker": "Screen.h",
-              "ToolTip": "C:\\Users\\0andet92.UNI\\Downloads\\New folder\\Maze-Runner\\Maze Runner\\Screen.h",
-              "RelativeToolTip": "Screen.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-03-06T07:04:12.418Z",
+              "WhenOpened": "2026-03-13T13:20:26.664Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Screen.cpp",
-              "DocumentMoniker": "C:\\Users\\0andet92.UNI\\Downloads\\New folder\\Maze-Runner\\Maze Runner\\Screen.cpp",
-              "RelativeDocumentMoniker": "Screen.cpp",
-              "ToolTip": "C:\\Users\\0andet92.UNI\\Downloads\\New folder\\Maze-Runner\\Maze Runner\\Screen.cpp",
-              "RelativeToolTip": "Screen.cpp",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACMAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-03-06T07:02:11.925Z",
+              "Title": "Maze_Algorithm.h",
+              "DocumentMoniker": "C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Maze_Algorithm.h",
+              "RelativeDocumentMoniker": "Maze_Algorithm.h",
+              "ToolTip": "C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Maze_Algorithm.h",
+              "RelativeToolTip": "Maze_Algorithm.h",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAADEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-03-13T13:15:51.516Z",
               "EditorCaption": ""
             }
           ]
