@@ -3,7 +3,7 @@
 #include <chrono>
 #include <Windows.h>
 #include <string>
-#include <vector>
+
 
 
 #include "Input.h"
@@ -69,7 +69,7 @@ int main()
 			if (!Level_1_Map.Get_Walls(std::round(pos[0]), std::round(pos[1])))
 			{
 				Screen.Goto_XY(std::round(pos[0]), std::round(pos[1]));
-				std::cout << "^";
+				std::cout << "˄";
 				pos[0] = std::round(pos[0]);
 			}
 			else
@@ -88,7 +88,7 @@ int main()
 			if (!Level_1_Map.Get_Walls(std::round(pos[0]), std::round(pos[1])))
 			{
 				Screen.Goto_XY(std::round(pos[0]), std::round(pos[1]));
-				std::cout << "v";
+				std::cout << "˅";
 				pos[0] = std::round(pos[0]);
 			}
 			else
@@ -107,7 +107,7 @@ int main()
 			if (!Level_1_Map.Get_Walls(std::round(pos[0]), std::round(pos[1])))
 			{
 				Screen.Goto_XY(std::round(pos[0]), std::round(pos[1]));
-				std::cout << "<";
+				std::cout << "˂";
 				pos[1] = std::round(pos[1]);
 			}
 			else
@@ -126,7 +126,7 @@ int main()
 			if (!Level_1_Map.Get_Walls(std::round(pos[0]), std::round(pos[1])))
 			{
 				Screen.Goto_XY(std::round(pos[0]), std::round(pos[1]));
-				std::cout << ">";
+				std::cout << "˃";
 				pos[1] = std::round(pos[1]);
 			}
 			else

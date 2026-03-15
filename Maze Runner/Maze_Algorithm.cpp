@@ -31,6 +31,7 @@ void Maze_Algorithm::Recursive()
 			break;
 		}
 		//getting random position within the borders
+		
 		//Current Position
 		struct
 		{
@@ -40,6 +41,7 @@ void Maze_Algorithm::Recursive()
 		Pos.x = Startpoint.x;
 		Pos.y = Startpoint.y;
 		//Current Position
+		
 		//Saving start and end of walls
 		struct
 		{
@@ -237,6 +239,10 @@ void Maze_Algorithm::Generate_Rooms()
 		for (size_t X = 0; X < Spawn_Room_Size; X++)
 		{
 			Level[Y + 1][X + 1] = air;
+			if (X == std::floor(Spawn_Room_Size / 2) && (Y == std::floor(Spawn_Room_Size / 2)))
+			{
+				Level[Y + 1][X + 1] = Spawn_Room;
+			}
 		}
 	}
 	//Exit Room
@@ -245,6 +251,10 @@ void Maze_Algorithm::Generate_Rooms()
 		for (size_t X = 0; X < Exit_Room_Size; X++)
 		{
 			Level[Y + Height - (Exit_Room_Size + 1)][X + Width - (Exit_Room_Size + 1)] = air;
+			if (X == std::floor(Exit_Room_Size / 2) && (Y == std::floor(Exit_Room_Size / 2)))
+			{
+				Level[Y + Height - (Exit_Room_Size + 1)][X + Width - (Exit_Room_Size + 1)] = Exit_Room;
+			}
 		}
 	}
 
@@ -295,23 +305,31 @@ void Maze_Algorithm::Generate_Rooms()
 
 void Maze_Algorithm::Spawn_collectibles()
 {
+	int spawned_hearts = 0;
 	for (size_t Y = 0; Y < Height; Y++)
 	{
 		for (size_t X = 0; X < Width; X++)
 		{
-			if (Level[Y][X] == Loot_Room)
-			{
+			switch (Level[Y][X]) {
+			case Loot_Room:
 				if (rand() % 100 < Loot_room_coin_frequency)
 				{
 					Level[Y][X] = Coin;
 				}
-			}
-			if (Level[Y][X] == air)
-			{
+				else if ((rand() % 100 < Loot_room_heart_frequency) && (spawned_hearts < Loot_room_Heart_Amount))
+				{
+					Level[Y][X] = Heart;
+					spawned_hearts++;
+				}
+				break;
+			case air:
 				if (rand() % 1000 < Default_coin_frequency)
 				{
 					Level[Y][X] = Coin;
 				}
+				break;
+			default:
+				break;
 			}
 		}
 	}

@@ -4,6 +4,8 @@
 
 void Terminal::Intialize()
 {
+	SetConsoleOutputCP(65001);		//set it to utf 8
+	
 	//Dealing with Window size and posistion
 	RECT rcClip;
 	HWND hwnd = GetForegroundWindow();
@@ -25,8 +27,9 @@ void Terminal::Intialize()
 
 	/*PCONSOLE_FONT_INFOEX fontData;
 	fontData->cbSize = sizeof(fontData);
-
-
+	fontData->dwFontSize.X = 8;
+	fontData->dwFontSize.Y = 8;
+	fontData->FontWeight = 400;
 	SetCurrentConsoleFontEx(hwnd, false, fontData);*/
 
 

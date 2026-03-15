@@ -1,49 +1,13 @@
-﻿  Maze Runner.cpp
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze Runner.cpp(50,30): warning C4244: 'argument': conversion from '_Ty' to 'int', possible loss of data
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze Runner.cpp(50,30): warning C4244:         with
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze Runner.cpp(50,30): warning C4244:         [
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze Runner.cpp(50,30): warning C4244:             _Ty=double
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze Runner.cpp(50,30): warning C4244:         ]
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze Runner.cpp(50,22): warning C4244: 'argument': conversion from '_Ty' to 'int', possible loss of data
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze Runner.cpp(50,22): warning C4244:         with
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze Runner.cpp(50,22): warning C4244:         [
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze Runner.cpp(50,22): warning C4244:             _Ty=double
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze Runner.cpp(50,22): warning C4244:         ]
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze Runner.cpp(66,49): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze Runner.cpp(66,29): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze Runner.cpp(69,61): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze Runner.cpp(69,41): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze Runner.cpp(71,50): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze Runner.cpp(71,30): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze Runner.cpp(85,49): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze Runner.cpp(85,29): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze Runner.cpp(88,61): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze Runner.cpp(88,41): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze Runner.cpp(90,50): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze Runner.cpp(90,30): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze Runner.cpp(104,49): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze Runner.cpp(104,29): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze Runner.cpp(107,61): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze Runner.cpp(107,41): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze Runner.cpp(109,50): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze Runner.cpp(109,30): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze Runner.cpp(123,49): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze Runner.cpp(123,29): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze Runner.cpp(126,61): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze Runner.cpp(126,41): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze Runner.cpp(128,50): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze Runner.cpp(128,30): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-  Maze_Algorithm.cpp
+﻿  Maze_Algorithm.cpp
 C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze_Algorithm.cpp(5,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze_Algorithm.cpp(277,65): warning C4244: 'argument': conversion from 'float' to 'const unsigned __int64', possible loss of data
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze_Algorithm.cpp(277,123): warning C4244: 'argument': conversion from 'float' to 'const unsigned __int64', possible loss of data
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze_Algorithm.cpp(282,22): warning C4244: 'argument': conversion from 'float' to 'const unsigned __int64', possible loss of data
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze_Algorithm.cpp(282,80): warning C4244: 'argument': conversion from 'float' to 'const unsigned __int64', possible loss of data
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze_Algorithm.cpp(283,41): warning C4244: 'argument': conversion from 'float' to 'const unsigned __int64', possible loss of data
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze_Algorithm.cpp(283,99): warning C4244: 'argument': conversion from 'float' to 'const unsigned __int64', possible loss of data
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze_Algorithm.cpp(287,26): warning C4244: 'argument': conversion from 'float' to 'const unsigned __int64', possible loss of data
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze_Algorithm.cpp(287,80): warning C4244: 'argument': conversion from 'float' to 'const unsigned __int64', possible loss of data
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze_Algorithm.cpp(288,26): warning C4244: 'argument': conversion from 'float' to 'const unsigned __int64', possible loss of data
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze_Algorithm.cpp(288,99): warning C4244: 'argument': conversion from 'float' to 'const unsigned __int64', possible loss of data
-  Generating Code...
+C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze_Algorithm.cpp(287,65): warning C4244: 'argument': conversion from 'float' to 'const unsigned __int64', possible loss of data
+C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze_Algorithm.cpp(287,123): warning C4244: 'argument': conversion from 'float' to 'const unsigned __int64', possible loss of data
+C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze_Algorithm.cpp(292,22): warning C4244: 'argument': conversion from 'float' to 'const unsigned __int64', possible loss of data
+C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze_Algorithm.cpp(292,80): warning C4244: 'argument': conversion from 'float' to 'const unsigned __int64', possible loss of data
+C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze_Algorithm.cpp(293,41): warning C4244: 'argument': conversion from 'float' to 'const unsigned __int64', possible loss of data
+C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze_Algorithm.cpp(293,99): warning C4244: 'argument': conversion from 'float' to 'const unsigned __int64', possible loss of data
+C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze_Algorithm.cpp(297,26): warning C4244: 'argument': conversion from 'float' to 'const unsigned __int64', possible loss of data
+C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze_Algorithm.cpp(297,80): warning C4244: 'argument': conversion from 'float' to 'const unsigned __int64', possible loss of data
+C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze_Algorithm.cpp(298,26): warning C4244: 'argument': conversion from 'float' to 'const unsigned __int64', possible loss of data
+C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Maze_Algorithm.cpp(298,99): warning C4244: 'argument': conversion from 'float' to 'const unsigned __int64', possible loss of data
   Maze Runner.vcxproj -> C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\x64\Debug\Maze Runner.exe

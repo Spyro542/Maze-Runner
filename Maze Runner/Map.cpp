@@ -14,33 +14,48 @@ Map::~Map()
 
 void Map::Draw_Maze()
 {
+	Terminal Screen;
+	Maze_Algorithm Maze_variables;
+
+
+	//go through and print the current state of the maze
 	for (size_t Y = 0; Y < Walls[1].size(); Y++)
 	{
 		for (size_t X = 0; X < Walls.size(); X++)
-		{
-			if (Walls[X][Y] == 1)
+		{	//░▒▓█♥❤
+			Screen.Goto_XY(Y, X);
+			switch (Walls[X][Y])
 			{
-				Goto_XY(Y, X);
-				SetColour(White, Bright_White);
-				std::cout << (char)176;
-				SetColour(Black, Black);
-			}
-			if (Walls[X][Y] == 2)
-			{
-				Goto_XY(Y, X);
-				SetColour(White, Gray);
-				std::cout << (char)176;
-				SetColour(Black, Black);
-			}
-			if (Walls[X][Y] == 100)
-			{
-				Goto_XY(Y, X);
-				SetColour(Yellow, Black);
-				std::cout << 'O';
-				SetColour(Black, Black);
+			case Maze_variables.wall:
+				Screen.SetColour(Screen.White, Screen.Bright_White);
+				std::cout << "▓";
+				break;
+			case Maze_variables.cracked:
+				Screen.SetColour(Screen.White, Screen.Gray);
+				std::cout << "░";
+				break;
+			case Maze_variables.Coin:
+				Screen.SetColour(Screen.Yellow, Screen.Black);
+				std::cout << "⦷";
+				break;
+			case Maze_variables.Spawn_Room:
+				Screen.SetColour(Screen.White, Screen.Black);
+				std::cout << "⚐";
+				break;
+			case Maze_variables.Exit_Room:
+				Screen.SetColour(Screen.Green, Screen.Black);
+				std::cout << "⚐";
+				break;
+			case Maze_variables.Heart:
+				Screen.SetColour(Screen.Red, Screen.Black);
+				std::cout << "♥";
+				break;
+			default:
+				break;
 			}
 		}
 	}
+	Screen.SetColour(Screen.Green, Screen.Black);
 }
 
 bool Map::Get_Walls(int X, int Y)
@@ -65,33 +80,3 @@ void Map::New_Maze(std::vector<std::vector<int>> Level)
 	Walls = Level;
 }
 
-
-
-
-void Map::Goto_XY(int X, int Y)
-{
-	HANDLE hStdout = GetStdHandle(STD_OUTPUT_HANDLE);
-	COORD position = { X, Y };
-
-	SetConsoleCursorPosition(hStdout, position);
-}
-
-void Map::SetColour(int textColor, int bgColor)
-{
-	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-	SetConsoleTextAttribute(hConsole,
-		(bgColor << 4) | textColor);
-	/*
-	0 Black			11 Even Lighter Blue (Pale Blue)
-	1 Blue			12 Pale/Light Red
-	2 Green			13 Bright Purple
-	3 Light Blue	14 Light Yellow/ Beige
-	4 Red			15 Bright White
-	5 Purple
-	6 Yellow
-	7 White
-	8 Gray			27+ Full line background color
-	9 Bright Blue
-	10 bright Green
-	*/
-}

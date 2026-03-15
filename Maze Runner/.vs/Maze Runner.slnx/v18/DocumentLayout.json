@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Maze_Algorithm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|solutionrelative:Maze_Algorithm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Maze Runner.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|solutionrelative:Maze Runner.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Maze_Algorithm.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -15,12 +15,12 @@
       "RelativeMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|solutionrelative:Map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|solutionrelative:Map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Maze_Algorithm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|solutionrelative:Maze_Algorithm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Maze Runner.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|solutionrelative:Maze Runner.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{58D6F4F1-22CC-447E-9F2C-1DBBCDC5E53A}|Maze Runner.vcxproj|solutionrelative:Map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,17 +30,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Maze Runner.cpp",
               "DocumentMoniker": "C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Maze Runner.cpp",
               "RelativeDocumentMoniker": "Maze Runner.cpp",
               "ToolTip": "C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Maze Runner.cpp",
               "RelativeToolTip": "Maze Runner.cpp",
-              "ViewState": "AgIAAIMAAAAAAAAAAIAwwJUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAgwCgAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-03-06T07:00:13.596Z",
               "IsPinned": true,
@@ -54,20 +54,20 @@
               "RelativeDocumentMoniker": "Map.h",
               "ToolTip": "C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Map.h",
               "RelativeToolTip": "Map.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-03-13T23:44:56.806Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Map.cpp",
               "DocumentMoniker": "C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Map.cpp",
               "RelativeDocumentMoniker": "Map.cpp",
               "ToolTip": "C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Map.cpp",
               "RelativeToolTip": "Map.cpp",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACAAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAACgAAAAAAAAAAAAgwDIAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-03-13T13:23:47.819Z",
               "EditorCaption": ""
@@ -80,20 +80,20 @@
               "RelativeDocumentMoniker": "Maze_Algorithm.cpp",
               "ToolTip": "C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Maze_Algorithm.cpp",
               "RelativeToolTip": "Maze_Algorithm.cpp",
-              "ViewState": "AgIAACkBAAAAAAAAAAAkwDkBAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-03-13T13:20:26.664Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Maze_Algorithm.h",
               "DocumentMoniker": "C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Maze_Algorithm.h",
               "RelativeDocumentMoniker": "Maze_Algorithm.h",
               "ToolTip": "C:\\Users\\Sjefs\\Desktop\\Github Repos\\Maze-Runner\\Maze-Runner\\Maze Runner\\Maze_Algorithm.h",
               "RelativeToolTip": "Maze_Algorithm.h",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACkAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-03-13T13:15:51.516Z",
               "EditorCaption": ""
