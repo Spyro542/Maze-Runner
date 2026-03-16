@@ -31,6 +31,7 @@ struct Position_2D
 
 int main()
 {
+	Input Key;
 	Terminal Screen;
 	// initialize the terminal
 	Screen.Intialize();
@@ -58,8 +59,8 @@ int main()
 
 
 		Screen.SetColour(Screen.Yellow, Screen.Black);
-		switch (Get_Input()) {
-		case Up:
+		switch (Key.Get_Input()) {
+		case Key.Up:
 		{
 			auto Current_Time = std::chrono::system_clock::now();
 			std::chrono::duration<double> Delta_Time = Current_Time - Start_Time;
@@ -78,7 +79,7 @@ int main()
 			}
 		}
 			break;
-		case Down:
+		case Key.Down:
 		{
 			auto Current_Time = std::chrono::system_clock::now();
 			std::chrono::duration<double> Delta_Time = Current_Time - Start_Time;
@@ -97,7 +98,7 @@ int main()
 			}
 		}
 			break;
-		case Left:
+		case Key.Left:
 		{
 			auto Current_Time = std::chrono::system_clock::now();
 			std::chrono::duration<double> Delta_Time = Current_Time - Start_Time;
@@ -116,7 +117,7 @@ int main()
 			}
 		}
 			break;
-		case Right:
+		case Key.Right:
 		{
 			auto Current_Time = std::chrono::system_clock::now();
 			std::chrono::duration<double> Delta_Time = Current_Time - Start_Time;
@@ -135,18 +136,18 @@ int main()
 			}
 		}
 			break;
-		case Enter:
+		case Key.Enter:
 			break;
-		case Esc:
+		case Key.Esc:
 			return 0;
 			break;
-		case Return:
+		case Key.Return:
 			break;
-		case Interact:
-			system("cls");
+		case Key.Interact:
+			//system("cls");
+			Screen.Goto_XY(0, 34);
 			Maze_Generator.Recursive();
 			//Generate Random Maze
-
 
 			Level_1_Map.New_Maze(Maze_Generator.Get_Level());
 			Level_1_Map.Draw_Maze();	//Draw Level 1

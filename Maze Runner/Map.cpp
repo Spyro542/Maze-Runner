@@ -26,6 +26,11 @@ void Map::Draw_Maze()
 			Screen.Goto_XY(Y, X);
 			switch (Walls[X][Y])
 			{
+			case Maze_variables.air:
+			case Maze_variables.Loot_Room:	//fallthrough deliberate to reuse code instead of unnecesarry duplication
+				Screen.SetColour(Screen.Black, Screen.Black);
+				std::cout << " ";
+				break;
 			case Maze_variables.wall:
 				Screen.SetColour(Screen.White, Screen.Bright_White);
 				std::cout << "▓";

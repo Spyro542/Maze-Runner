@@ -1,4 +1,5 @@
 #include "Maze_Algorithm.h"
+#include <iostream>
 
 Maze_Algorithm::Maze_Algorithm()
 {
