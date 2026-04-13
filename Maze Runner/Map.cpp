@@ -22,7 +22,8 @@ void Map::Draw_Maze()
 	for (size_t Y = 0; Y < Walls[1].size(); Y++)
 	{
 		for (size_t X = 0; X < Walls.size(); X++)
-		{	//░▒▓█♥❤
+		{	//░▒▓█♥❤☼
+			//https://www.lucasfonts.com/fonts/package_details/consolas
 			Screen.Goto_XY(Y, X);
 			switch (Walls[X][Y])
 			{
@@ -41,15 +42,15 @@ void Map::Draw_Maze()
 				break;
 			case Maze_variables.Coin:
 				Screen.SetColour(Screen.Yellow, Screen.Black);
-				std::cout << "⦷";
+				std::cout << "©";
 				break;
 			case Maze_variables.Spawn_Room:
 				Screen.SetColour(Screen.White, Screen.Black);
-				std::cout << "⚐";
+				std::cout << "⌂";
 				break;
 			case Maze_variables.Exit_Room:
 				Screen.SetColour(Screen.Green, Screen.Black);
-				std::cout << "⚐";
+				std::cout << "⌂";
 				break;
 			case Maze_variables.Heart:
 				Screen.SetColour(Screen.Red, Screen.Black);

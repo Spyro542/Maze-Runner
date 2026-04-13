@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS 1
+//#define _CRT_SECURE_NO_WARNINGS 1
 #include <iostream>
 #include <chrono>
 #include <Windows.h>
@@ -8,7 +8,7 @@
 
 #include "Input.h"
 #include "Map.h"
-#include "Levels.h"
+//#include "Levels.h"
 #include "Terminal.h"
 #include "Maze_Algorithm.h"
 

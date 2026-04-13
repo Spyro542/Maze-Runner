@@ -5,12 +5,13 @@
 void Terminal::Intialize()
 {
 	SetConsoleOutputCP(65001);		//set it to utf 8
+	//SetConsoleOutputCP(CP_UTF8);
 	
 	//Dealing with Window size and posistion
 	RECT rcClip;
 	HWND hwnd = GetForegroundWindow();
 
-	if (hwnd != NULL) MoveWindow(hwnd, -15, -50, 0, 0, TRUE); //moving window to top left
+	if (hwnd != NULL) MoveWindow(hwnd, -5, -30, 0, 0, TRUE); //moving window to top left
 	if (hwnd != NULL) { SetWindowPos(hwnd, 0, 0, 0, 1500, 900, SWP_SHOWWINDOW | SWP_NOMOVE); } //setting window size
 
 	if (hwnd != NULL) GetWindowRect(hwnd, &rcClip); //get window borders
