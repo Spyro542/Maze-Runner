@@ -132,8 +132,10 @@
     <ClCompile Include="Map.cpp" />
     <ClCompile Include="Maze Runner.cpp" />
     <ClCompile Include="Maze_Algorithm.cpp" />
+    <ClCompile Include="Movement.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Terminal.cpp" />
+    <ClCompile Include="Time_Manager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Character.h" />
@@ -141,8 +143,10 @@
     <ClInclude Include="Levels.h" />
     <ClInclude Include="Map.h" />
     <ClInclude Include="Maze_Algorithm.h" />
+    <ClInclude Include="Movement.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Terminal.h" />
+    <ClInclude Include="Time_Manager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

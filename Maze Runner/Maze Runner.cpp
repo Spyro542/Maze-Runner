@@ -11,6 +11,7 @@
 //#include "Levels.h"
 #include "Terminal.h"
 #include "Maze_Algorithm.h"
+#include "Time_Manager.h"
 
 
 char New_Screen[129][33];
@@ -43,6 +44,9 @@ int main()
 	Maze_Generator.Recursive();
 	//Generate Random Maze
 
+	//Initialize delta time
+	Time_Manager Time;
+	//Initialize delta time
 	
 	Map Level_1_Map(Maze_Generator.Get_Level());	//Make the map with level 1
 	Level_1_Map.Draw_Maze();	//Draw Level 1
@@ -55,18 +59,16 @@ int main()
 	while (true)
 	{
 		auto Frame_Start = clock();
-		auto Start_Time = std::chrono::system_clock::now();	//Delta time
+		Time.Start();
 
 
 		Screen.SetColour(Screen.Yellow, Screen.Black);
 		switch (Key.Get_Input()) {
 		case Key.Up:
 		{
-			auto Current_Time = std::chrono::system_clock::now();
-			std::chrono::duration<double> Delta_Time = Current_Time - Start_Time;
 			Screen.Goto_XY(std::round(pos[0]), std::round(pos[1]));
 			std::cout << " ";
-			pos[1] -= (movespeed * Delta_Time.count());
+			pos[1] -= (movespeed * Time.Delta_Time());
 			if (!Level_1_Map.Get_Walls(std::round(pos[0]), std::round(pos[1])))
 			{
 				Screen.Goto_XY(std::round(pos[0]), std::round(pos[1]));
@@ -81,11 +83,9 @@ int main()
 			break;
 		case Key.Down:
 		{
-			auto Current_Time = std::chrono::system_clock::now();
-			std::chrono::duration<double> Delta_Time = Current_Time - Start_Time;
 			Screen.Goto_XY(std::round(pos[0]), std::round(pos[1]));
 			std::cout << " ";
-			pos[1] += (movespeed * Delta_Time.count());
+			pos[1] += (movespeed * Time.Delta_Time());
 			if (!Level_1_Map.Get_Walls(std::round(pos[0]), std::round(pos[1])))
 			{
 				Screen.Goto_XY(std::round(pos[0]), std::round(pos[1]));
@@ -100,11 +100,9 @@ int main()
 			break;
 		case Key.Left:
 		{
-			auto Current_Time = std::chrono::system_clock::now();
-			std::chrono::duration<double> Delta_Time = Current_Time - Start_Time;
 			Screen.Goto_XY(std::round(pos[0]), std::round(pos[1]));
 			std::cout << " ";
-			pos[0] -= (movespeed * Delta_Time.count());
+			pos[0] -= (movespeed * Time.Delta_Time());
 			if (!Level_1_Map.Get_Walls(std::round(pos[0]), std::round(pos[1])))
 			{
 				Screen.Goto_XY(std::round(pos[0]), std::round(pos[1]));
@@ -119,11 +117,9 @@ int main()
 			break;
 		case Key.Right:
 		{
-			auto Current_Time = std::chrono::system_clock::now();
-			std::chrono::duration<double> Delta_Time = Current_Time - Start_Time;
 			Screen.Goto_XY(std::round(pos[0]), std::round(pos[1]));
 			std::cout << " ";
-			pos[0] += (movespeed * Delta_Time.count());
+			pos[0] += (movespeed * Time.Delta_Time());
 			if (!Level_1_Map.Get_Walls(std::round(pos[0]), std::round(pos[1])))
 			{
 				Screen.Goto_XY(std::round(pos[0]), std::round(pos[1]));
@@ -159,12 +155,10 @@ int main()
 		
 		
 
-		auto Current_Time = std::chrono::system_clock::now();
-		std::chrono::duration<double> Delta_Time = Current_Time - Start_Time;
 		auto Frame_Time = clock() - Frame_Start;
 				
 		Screen.Goto_XY(0, 32);
-		std::cout << "Elapsed time: " << Delta_Time.count() << "s" << std::endl;
+		std::cout << "Elapsed time: " << Time.Delta_Time() << "s        " << std::endl;
 
 		if (Frame_Time > 0)
 		{
