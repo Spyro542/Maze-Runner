@@ -1,9 +1,6 @@
 #include "Input.h"
-#include <Windows.h>
 
-
-
-int Get_Input()
+int Input::Get_Input()
 {
 	if (GetAsyncKeyState('W') || GetAsyncKeyState(VK_UP))
 	{
@@ -45,11 +42,10 @@ int Get_Input()
 		//while (GetAsyncKeyState('F')) {}
 		return Interact;
 	}
-
-	return 0;
+    return 0;
 }
 
-void Clear_Inputs()				//To preven potensial issues with key buffering
+void Input::Clear_Inputs()
 {
 	GetAsyncKeyState('W');
 	GetAsyncKeyState('S');
@@ -68,5 +64,6 @@ void Clear_Inputs()				//To preven potensial issues with key buffering
 
 	GetAsyncKeyState('F');
 }
+
 //	GetAsyncKeyState('');
 //	GetAsyncKeyState(VK_);

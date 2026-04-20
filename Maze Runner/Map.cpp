@@ -3,7 +3,7 @@
 #include <vector>
 #include <iostream>
 
-Map::Map(std::vector<std::vector<bool>> Level)
+Map::Map(std::vector<std::vector<int>> Level)
 {
 	Walls = Level;
 }
@@ -14,19 +14,54 @@ Map::~Map()
 
 void Map::Draw_Maze()
 {
+	Terminal Screen;
+	Maze_Algorithm Maze_variables;
+
+
+	//go through and print the current state of the maze
 	for (size_t Y = 0; Y < Walls[1].size(); Y++)
 	{
 		for (size_t X = 0; X < Walls.size(); X++)
-		{
-			if (Walls[X][Y])
+		{	//░▒▓█♥❤☼
+			//https://www.lucasfonts.com/fonts/package_details/consolas
+			Screen.Goto_XY(Y, X);
+			switch (Walls[X][Y])
 			{
-				Goto_XY(Y, X);
-				SetColour(Bright_White, Bright_White);
-				std::cout << "#";
-				SetColour(Black, Black);
+			case Maze_variables.air:
+			case Maze_variables.Loot_Room:	//fallthrough deliberate to reuse code instead of unnecesarry duplication
+				Screen.SetColour(Screen.Black, Screen.Black);
+				std::cout << " ";
+				break;
+			case Maze_variables.wall:
+				Screen.SetColour(Screen.White, Screen.Bright_White);
+				std::cout << "▓";
+				break;
+			case Maze_variables.cracked:
+				Screen.SetColour(Screen.White, Screen.Gray);
+				std::cout << "░";
+				break;
+			case Maze_variables.Coin:
+				Screen.SetColour(Screen.Yellow, Screen.Black);
+				std::cout << "©";
+				break;
+			case Maze_variables.Spawn_Room:
+				Screen.SetColour(Screen.White, Screen.Black);
+				std::cout << "⌂";
+				break;
+			case Maze_variables.Exit_Room:
+				Screen.SetColour(Screen.Green, Screen.Black);
+				std::cout << "⌂";
+				break;
+			case Maze_variables.Heart:
+				Screen.SetColour(Screen.Red, Screen.Black);
+				std::cout << "♥";
+				break;
+			default:
+				break;
 			}
 		}
 	}
+	Screen.SetColour(Screen.Green, Screen.Black);
 }
 
 bool Map::Get_Walls(int X, int Y)
@@ -41,32 +76,13 @@ bool Map::Get_Walls(int X, int Y)
 	}
 }
 
-
-
-void Map::Goto_XY(int X, int Y)
+void Map::Update_Maze(int X, int Y, int tile)
 {
-	HANDLE hStdout = GetStdHandle(STD_OUTPUT_HANDLE);
-	COORD position = { X, Y };
-
-	SetConsoleCursorPosition(hStdout, position);
+	Walls[Y][X] = tile;
 }
 
-void Map::SetColour(int textColor, int bgColor)
+void Map::New_Maze(std::vector<std::vector<int>> Level)
 {
-	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-	SetConsoleTextAttribute(hConsole,
-		(bgColor << 4) | textColor);
-	/*
-	0 Black			11 Even Lighter Blue (Pale Blue)
-	1 Blue			12 Pale/Light Red
-	2 Green			13 Bright Purple
-	3 Light Blue	14 Light Yellow/ Beige
-	4 Red			15 Bright White
-	5 Purple
-	6 Yellow
-	7 White
-	8 Gray			27+ Full line background color
-	9 Bright Blue
-	10 bright Green
-	*/
+	Walls = Level;
 }
+

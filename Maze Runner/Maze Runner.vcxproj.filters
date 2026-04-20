@@ -21,27 +21,57 @@
     <ClCompile Include="Maze Runner.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Screen.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Map.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Terminal.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Maze_Algorithm.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Character.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Classes</Filter>
     </ClCompile>
     <ClCompile Include="Input.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Classes</Filter>
     </ClCompile>
-    <ClCompile Include="Map.cpp">
+    <ClCompile Include="Movement.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Time_Manager.cpp">
       <Filter>Classes</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Screen.h">
+    <ClInclude Include="Map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Levels.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Terminal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Maze_Algorithm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Character.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Input.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Map.h">
+    <ClInclude Include="Movement.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Levels.h">
+    <ClInclude Include="Time_Manager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
