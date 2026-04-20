@@ -1,5 +1,6 @@
 #pragma once
 #include <vector>
+#include <string>
 
 class Character
 {
@@ -10,7 +11,7 @@ public:
 	void Set_Position(int Y, int X);
 	void Update_Position(int Y, int X);
 	std::vector<int> Get_Position();
-
+	//write current pos as wall type then write space moved to as player
 
 protected:
 	float Max_Health = 0;
@@ -18,6 +19,7 @@ protected:
 	bool Handle_Death = true;
 	std::vector<int> Position{ 0,0 };
 	std::vector<int> Return_Position{ 2,2 };
+	std::string Icon = "☺";
 private:
 
 };

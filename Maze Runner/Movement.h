@@ -18,6 +18,8 @@ public:
 	void Left(std::vector<int> *Pos, Time_Manager* Delta_Time);
 	void Right(std::vector<int> *Pos, Time_Manager* Delta_Time);
 
+	void Reset_Float();
+
 
 private:
 
