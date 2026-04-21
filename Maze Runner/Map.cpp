@@ -14,7 +14,6 @@ Map::~Map()
 
 void Map::Draw_Maze()
 {
-	Terminal Screen;
 	Maze_Algorithm Maze_variables;
 
 
@@ -64,15 +63,47 @@ void Map::Draw_Maze()
 	Screen.SetColour(Screen.Green, Screen.Black);
 }
 
-bool Map::Get_Walls(int X, int Y)
+int Map::Get_Walls(int X, int Y)
 {
-	if (Walls[Y][X])
+	return Walls[Y][X];
+}
+
+std::string Map::Get_Walls_String(int X, int Y)
+{
+	Maze_Algorithm Maze_variables;
+	switch (Walls[Y][X])
 	{
-		return true;
-	}
-	else
-	{
-		return false;
+	case Maze_variables.air:
+		Screen.SetColour(Screen.Black, Screen.Black);
+		return " ";
+		break;
+	case Maze_variables.wall:
+		Screen.SetColour(Screen.White, Screen.Bright_White);
+		return "▓";
+		break;
+	case Maze_variables.cracked:
+		Screen.SetColour(Screen.White, Screen.Gray);
+		return "░";
+		break;
+	case Maze_variables.Coin:
+		Screen.SetColour(Screen.Yellow, Screen.Black);
+		return "©";
+		break;
+	case Maze_variables.Spawn_Room:
+		Screen.SetColour(Screen.White, Screen.Black);
+		return "⌂";
+		break;
+	case Maze_variables.Exit_Room:
+		Screen.SetColour(Screen.Green, Screen.Black);
+		return "⌂";
+		break;
+	case Maze_variables.Heart:
+		Screen.SetColour(Screen.Red, Screen.Black);
+		return "♥";
+		break;
+	default:
+		return " ";
+		break;
 	}
 }
 

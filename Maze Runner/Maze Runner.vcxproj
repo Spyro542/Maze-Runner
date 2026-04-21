@@ -134,6 +134,7 @@
     <ClCompile Include="Maze_Algorithm.cpp" />
     <ClCompile Include="Movement.cpp" />
     <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Player_Controller.cpp" />
     <ClCompile Include="Terminal.cpp" />
     <ClCompile Include="Time_Manager.cpp" />
   </ItemGroup>
@@ -145,6 +146,7 @@
     <ClInclude Include="Maze_Algorithm.h" />
     <ClInclude Include="Movement.h" />
     <ClInclude Include="Player.h" />
+    <ClInclude Include="Player_Controller.h" />
     <ClInclude Include="Terminal.h" />
     <ClInclude Include="Time_Manager.h" />
   </ItemGroup>

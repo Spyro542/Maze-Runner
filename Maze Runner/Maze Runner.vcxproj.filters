@@ -45,6 +45,9 @@
     <ClCompile Include="Time_Manager.cpp">
       <Filter>Classes</Filter>
     </ClCompile>
+    <ClCompile Include="Player_Controller.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Map.h">
@@ -72,6 +75,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Time_Manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Player_Controller.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -6,8 +6,13 @@
 class Player : public Character
 {
 public:
+	Player();
+	Player(std::string Player_Character);
 	void Update();
 
+
+protected:
+	
 
 private:
 

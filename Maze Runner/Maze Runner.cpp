@@ -12,6 +12,8 @@
 #include "Terminal.h"
 #include "Maze_Algorithm.h"
 #include "Time_Manager.h"
+#include "Player.h"
+#include "Player_Controller.h"
 
 
 char New_Screen[129][33];
@@ -52,7 +54,9 @@ int main()
 	Level_1_Map.Draw_Maze();	//Draw Level 1
 
 	//Place player
-	Screen.Goto_XY(pos[0], pos[1]);
+	//Screen.Goto_XY(pos[0], pos[1]);
+	Player Active_Player;
+	Player_Controller Active_Player_controller(&Time);
 	Screen.SetColour(Screen.Yellow, Screen.Black);
 	std::cout << "v";
 
@@ -64,7 +68,7 @@ int main()
 
 		Screen.SetColour(Screen.Yellow, Screen.Black);
 		switch (Key.Get_Input()) {
-		case Key.Up:
+		/*case Key.Up:
 		{
 			Screen.Goto_XY(std::round(pos[0]), std::round(pos[1]));
 			std::cout << " ";
@@ -131,7 +135,7 @@ int main()
 				pos[0] -= 1;
 			}
 		}
-			break;
+			break;*/
 		case Key.Enter:
 			break;
 		case Key.Esc:
@@ -153,7 +157,7 @@ int main()
 		//std::cout << std::endl;
 		Screen.SetColour(Screen.Green, Screen.Black);
 		
-		
+		Active_Player_controller.Update(&Active_Player, &Level_1_Map);
 
 		auto Frame_Time = clock() - Frame_Start;
 				
