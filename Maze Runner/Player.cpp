@@ -1,15 +1,16 @@
 #include "Player.h"
 
-Player::Player()
+Player::Player(Map *level, Menus *menu)
 {
+	UI = true;
+	Icon = menu->get_player_icon();
+	ptr_level = level;
+	ptr_menu = menu;
 	Handle_Death = false;
-	Icon = "♀";
 	Set_Position(Return_Position[0], Return_Position[1], " ");
-}
-
-Player::Player(std::string Player_Character)
-{
-	Icon = Player_Character;
+	Max_Health = 5;
+	Health = Max_Health;
+	Update_UI();
 }
 
 void Player::Update()

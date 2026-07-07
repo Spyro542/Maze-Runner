@@ -22,7 +22,7 @@ int Input::Get_Input()
 		//while (GetAsyncKeyState('D') || GetAsyncKeyState(VK_RIGHT)) {}
 		return Right;
 	}
-	else if (GetAsyncKeyState(VK_RETURN) || GetAsyncKeyState('Z'))
+	else if (GetAsyncKeyState(VK_RETURN) || GetAsyncKeyState('Z') || GetAsyncKeyState('E'))
 	{
 		//while (GetAsyncKeyState(VK_RETURN) || GetAsyncKeyState('Z')) {}
 		return Enter;
@@ -42,7 +42,33 @@ int Input::Get_Input()
 		//while (GetAsyncKeyState('F')) {}
 		return Interact;
 	}
+	else if (GetAsyncKeyState(VK_SHIFT))
+	{
+		return Shift;
+	}
+	else if (GetAsyncKeyState(VK_SPACE))
+	{
+		return Space;
+	}
     return 0;
+}
+
+bool Input::Get_Shift()
+{
+	if (GetAsyncKeyState(VK_SHIFT))
+	{
+		return true;
+	}
+	return false;
+}
+
+bool Input::Get_Space()
+{
+	if (GetAsyncKeyState(VK_SPACE))
+	{
+		return true;
+	}
+	return false;
 }
 
 void Input::Clear_Inputs()
@@ -59,6 +85,8 @@ void Input::Clear_Inputs()
 	GetAsyncKeyState(VK_RETURN);	//Enter
 	GetAsyncKeyState(VK_ESCAPE);	//Esc
 	GetAsyncKeyState(VK_BACK);		//Return
+	GetAsyncKeyState(VK_SHIFT);
+	GetAsyncKeyState(VK_SPACE);
 	GetAsyncKeyState('Z');
 	GetAsyncKeyState('X');
 

@@ -106,9 +106,49 @@ std::string Map::Get_Walls_String(int X, int Y)
 		break;
 	}
 }
+std::string Map::Get_Walls_String(int Tile)
+{
+	Maze_Algorithm Maze_variables;
+	switch (Tile)
+	{
+	case Maze_variables.air:
+		Screen.SetColour(Screen.Black, Screen.Black);
+		return " ";
+		break;
+	case Maze_variables.wall:
+		Screen.SetColour(Screen.White, Screen.Bright_White);
+		return "▓";
+		break;
+	case Maze_variables.cracked:
+		Screen.SetColour(Screen.White, Screen.Gray);
+		return "░";
+		break;
+	case Maze_variables.Coin:
+		Screen.SetColour(Screen.Yellow, Screen.Black);
+		return "©";
+		break;
+	case Maze_variables.Spawn_Room:
+		Screen.SetColour(Screen.White, Screen.Black);
+		return "⌂";
+		break;
+	case Maze_variables.Exit_Room:
+		Screen.SetColour(Screen.Green, Screen.Black);
+		return "⌂";
+		break;
+	case Maze_variables.Heart:
+		Screen.SetColour(Screen.Red, Screen.Black);
+		return "♥";
+		break;
+	default:
+		return " ";
+		break;
+	}
+}
 
 void Map::Update_Maze(int X, int Y, int tile)
 {
+	//Screen.Goto_XY(X, Y);
+	//std::cout << Get_Walls_String(tile);
 	Walls[Y][X] = tile;
 }
 

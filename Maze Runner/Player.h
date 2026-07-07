@@ -7,7 +7,7 @@ class Player : public Character
 {
 public:
 	Player();
-	Player(std::string Player_Character);
+	Player(Map *level, Menus *menu);
 	void Update();
 
 

@@ -6,6 +6,8 @@ public:
 	Input() = default;
 
 	int Get_Input();
+	bool Get_Shift();
+	bool Get_Space();
 	void Clear_Inputs();
 
 
@@ -16,9 +18,11 @@ public:
 		Left,		//A & Left arrow
 		Right,		//D & Right arrow
 
-		Enter,		//Enter & X
+		Enter,		//Enter & X & E
 		Esc,		//Escape / Esc
 		Return,		//Backspace & Z
+		Shift,		//left shift
+		Space,
 
 		Interact,	//F
 

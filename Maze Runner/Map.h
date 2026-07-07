@@ -11,6 +11,7 @@ public:
 	void Draw_Maze();
 	int Get_Walls(int X, int Y);
 	std::string Get_Walls_String(int X, int Y);
+	std::string Get_Walls_String(int Tile);
 	void Update_Maze(int X, int Y, int tile);
 	void New_Maze(std::vector<std::vector<int>> Level);
 

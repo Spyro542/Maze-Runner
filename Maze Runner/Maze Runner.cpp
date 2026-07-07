@@ -8,18 +8,22 @@
 
 #include "Input.h"
 #include "Map.h"
-//#include "Levels.h"
+
 #include "Terminal.h"
 #include "Maze_Algorithm.h"
 #include "Time_Manager.h"
 #include "Player.h"
 #include "Player_Controller.h"
+#include "Menus.h"
 
 
 char New_Screen[129][33];
 int New_Screen_Colour[129][33][2];
 std::vector<double> pos = { 1,1 };
 float movespeed = 150;
+bool quit = false;
+bool restart = false;
+bool Return_to_Menu = false;
 
 struct Vector_2D
 {
@@ -34,142 +38,50 @@ struct Position_2D
 
 int main()
 {
-	Input Key;
-	Terminal Screen;
-	// initialize the terminal
-	Screen.Intialize();
-	Screen.SetColour(Screen.Green, Screen.Black);
-	// initialize the terminal
-
-	//Generate Random Maze
-	Maze_Algorithm Maze_Generator;
-	Maze_Generator.Recursive();
-	//Generate Random Maze
-
-	//Initialize delta time
-	Time_Manager Time;
-	//Initialize delta time
-	
-	Map Level_1_Map(Maze_Generator.Get_Level());	//Make the map with level 1
-	Level_1_Map.Draw_Maze();	//Draw Level 1
-
-	//Place player
-	//Screen.Goto_XY(pos[0], pos[1]);
-	Player Active_Player;
-	Player_Controller Active_Player_controller(&Time);
-	Screen.SetColour(Screen.Yellow, Screen.Black);
-	std::cout << "v";
-
-	while (true)
 	{
-		auto Frame_Start = clock();
-		Time.Start();
+		Terminal Screen;
+		// initialize the terminal
+		Screen.Intialize();
+		Screen.SetColour(Screen.Green, Screen.Black);
+		// initialize the terminal
+	}
+	Menus Menu(&quit, &restart, &Return_to_Menu);
+	while (!quit)
+	{
 
+		Menu.Main_Menu();
 
-		Screen.SetColour(Screen.Yellow, Screen.Black);
-		switch (Key.Get_Input()) {
-		/*case Key.Up:
+		while (!Return_to_Menu)
 		{
-			Screen.Goto_XY(std::round(pos[0]), std::round(pos[1]));
-			std::cout << " ";
-			pos[1] -= (movespeed * Time.Delta_Time());
-			if (!Level_1_Map.Get_Walls(std::round(pos[0]), std::round(pos[1])))
-			{
-				Screen.Goto_XY(std::round(pos[0]), std::round(pos[1]));
-				std::cout << "˄";
-				pos[0] = std::round(pos[0]);
-			}
-			else
-			{
-				pos[1] += 1;
-			}
-		}
-			break;
-		case Key.Down:
-		{
-			Screen.Goto_XY(std::round(pos[0]), std::round(pos[1]));
-			std::cout << " ";
-			pos[1] += (movespeed * Time.Delta_Time());
-			if (!Level_1_Map.Get_Walls(std::round(pos[0]), std::round(pos[1])))
-			{
-				Screen.Goto_XY(std::round(pos[0]), std::round(pos[1]));
-				std::cout << "˅";
-				pos[0] = std::round(pos[0]);
-			}
-			else
-			{
-				pos[1] -= 1;
-			}
-		}
-			break;
-		case Key.Left:
-		{
-			Screen.Goto_XY(std::round(pos[0]), std::round(pos[1]));
-			std::cout << " ";
-			pos[0] -= (movespeed * Time.Delta_Time());
-			if (!Level_1_Map.Get_Walls(std::round(pos[0]), std::round(pos[1])))
-			{
-				Screen.Goto_XY(std::round(pos[0]), std::round(pos[1]));
-				std::cout << "˂";
-				pos[1] = std::round(pos[1]);
-			}
-			else
-			{
-				pos[0] += 1;
-			}
-		}
-			break;
-		case Key.Right:
-		{
-			Screen.Goto_XY(std::round(pos[0]), std::round(pos[1]));
-			std::cout << " ";
-			pos[0] += (movespeed * Time.Delta_Time());
-			if (!Level_1_Map.Get_Walls(std::round(pos[0]), std::round(pos[1])))
-			{
-				Screen.Goto_XY(std::round(pos[0]), std::round(pos[1]));
-				std::cout << "˃";
-				pos[1] = std::round(pos[1]);
-			}
-			else
-			{
-				pos[0] -= 1;
-			}
-		}
-			break;*/
-		case Key.Enter:
-			break;
-		case Key.Esc:
-			return 0;
-			break;
-		case Key.Return:
-			break;
-		case Key.Interact:
-			//system("cls");
-			Screen.Goto_XY(0, 34);
+
+			//Generate Random Maze
+			Maze_Algorithm Maze_Generator;
 			Maze_Generator.Recursive();
 			//Generate Random Maze
 
-			Level_1_Map.New_Maze(Maze_Generator.Get_Level());
+			//Initialize delta time
+			Time_Manager Time;
+			//Initialize delta time
+
+			Map Level_1_Map(Maze_Generator.Get_Level());	//Make the map with level 1
 			Level_1_Map.Draw_Maze();	//Draw Level 1
-			break;
-		
-		}
-		//std::cout << std::endl;
-		Screen.SetColour(Screen.Green, Screen.Black);
-		
-		Active_Player_controller.Update(&Active_Player, &Level_1_Map);
 
-		auto Frame_Time = clock() - Frame_Start;
-				
-		Screen.Goto_XY(0, 32);
-		std::cout << "Elapsed time: " << Time.Delta_Time() << "s        " << std::endl;
+			//Place player
+			Player Active_Player(&Level_1_Map, &Menu);
+			Player_Controller Active_Player_controller(&Time, &Menu);
 
-		if (Frame_Time > 0)
-		{
-			Screen.Goto_XY(0, 33);
-			std::cout << "FPS: " << CLOCKS_PER_SEC / Frame_Time << "Fps" << std::endl;
+			while (!restart)
+			{
+				auto Frame_Start = clock();
+				Time.Start();
+
+				Active_Player_controller.Update(&Active_Player, &Level_1_Map);
+
+			}
+			restart = false;
 		}
+		Return_to_Menu = false;
 	}
-
+	quit = false;
 }
 

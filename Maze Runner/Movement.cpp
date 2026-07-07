@@ -26,7 +26,7 @@ int Movement::Right(std::vector<int> Pos)
 
 int Movement::Up(std::vector<int> Pos, Time_Manager* Delta_Time)
 {
-	float_Pos[0] -= Delta_Time->Delta_Time() * Movement_Speed;
+	float_Pos[0] -= Delta_Time->Delta_Time() * Movement_Speed*2;
 	if (float_Pos[0] <= -1)
 	{
 		float_Pos[0]++;
@@ -37,8 +37,8 @@ int Movement::Up(std::vector<int> Pos, Time_Manager* Delta_Time)
 
 int Movement::Down(std::vector<int> Pos, Time_Manager* Delta_Time)
 {
-	float_Pos[0] += Delta_Time->Delta_Time() * Movement_Speed/100;
-	if (float_Pos[0] <= 1)
+	float_Pos[0] += Delta_Time->Delta_Time() * Movement_Speed;
+	if (float_Pos[0] >= 1)
 	{
 		float_Pos[0]--;
 		return 1;
@@ -48,7 +48,7 @@ int Movement::Down(std::vector<int> Pos, Time_Manager* Delta_Time)
 
 int Movement::Left(std::vector<int> Pos, Time_Manager* Delta_Time)
 {
-	float_Pos[1] -= Delta_Time->Delta_Time() * Movement_Speed;
+	float_Pos[1] -= Delta_Time->Delta_Time() * Movement_Speed*2;
 	if (float_Pos[1] <= -1)
 	{
 		float_Pos[1]++;
@@ -60,7 +60,7 @@ int Movement::Left(std::vector<int> Pos, Time_Manager* Delta_Time)
 int Movement::Right(std::vector<int> Pos, Time_Manager* Delta_Time)
 {
 	float_Pos[1] += Delta_Time->Delta_Time() * Movement_Speed;
-	if (float_Pos[1] <= 1)
+	if (float_Pos[1] >= 1)
 	{
 		float_Pos[1]--;
 		return 1;
