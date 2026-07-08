@@ -27,6 +27,7 @@ bool quit = false;
 bool restart = false;
 bool Return_to_Menu = false;
 
+
 struct Vector_2D
 {
 	float X = 0;
@@ -72,10 +73,29 @@ int main()
 			Player Active_Player(&Level_1_Map, &Menu, &Maze_Generator);
 			Player_Controller Active_Player_controller(&Time, &Menu);
 
-			/*for (size_t i = 0; i < Level_1_Map.Get_Cats().size() - 1; i++)
-			{
 
-			}*/
+			
+			while (!restart)
+			{
+				auto Frame_Start = clock();
+				Time.Start();
+
+				Active_Player_controller.Update(&Active_Player, &Level_1_Map);
+				if (Timer > 0.2)
+				{
+					for (size_t i = 0; i < Level_1_Map.Get_Cats().size() - 1; i++)
+					{
+						if (Level_1_Map.Get_Cats()[i]->Update(&Active_Player))
+						{
+							delete Level_1_Map.Get_Cats()[i];
+							Level_1_Map.Destroy_Cat(i);
+						}
+					}
+					Timer -= 0.2;
+				}
+				Timer += Time.Delta_Time();
+
+			}
 			restart = false;
 		}
 		Return_to_Menu = false;

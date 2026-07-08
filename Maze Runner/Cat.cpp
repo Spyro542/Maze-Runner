@@ -11,7 +11,7 @@ Cat::~Cat()
 {
 }
 
-void Cat::Update(Player* mouse)
+bool Cat::Update(Player* mouse)
 {
 	ptr_player = mouse;
 	if (rand() % 100 <= move_chance)
@@ -36,7 +36,7 @@ void Cat::Update(Player* mouse)
 		}
 	}
 
-	if (rand() % 100 > move_chance_towards_player)
+	if (rand() % 100 < move_chance_towards_player)
 	{
 
 		if ((ptr_player->Get_Position()[0] > Get_Position()[0]))
@@ -63,6 +63,7 @@ void Cat::Update(Player* mouse)
 	{
 		ptr_player->Update_Health(1);
 		ptr_player->Set_Position(ptr_player->Get_Position()[0], ptr_player->Get_Position()[1], " ");
-		delete this;
+		return true;
 	}
+	return false;
 }

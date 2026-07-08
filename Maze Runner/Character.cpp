@@ -110,13 +110,16 @@ void Character::Update_Position(int Y, int X, std::string Last_Tile, int next_ti
 		if (walkable)
 		{
 			Screen.Goto_XY(Position[0], Position[1]);
+			/*if (Last_Tile == "©") { Screen.SetColour(Screen.Yellow, Screen.Black); }
+			else if (Last_Tile == "⌂") { Screen.SetColour(Screen.Green, Screen.Black); }
+			else if (Last_Tile == "♥") { Screen.SetColour(Screen.Red, Screen.Black); }*/
 			std::cout << Last_Tile;
 			Position[0] += Y;
 			Position[1] += X;
 			Screen.Goto_XY(Position[0], Position[1]);
 			Screen.SetColour(Character_Colors.forground, Character_Colors.background);
 			std::cout << Icon;
-			if (ptr_level != nullptr)
+			if (ptr_level != nullptr && ptr_menu != nullptr)
 			{
 				switch (next_tile) {
 				case Coin:

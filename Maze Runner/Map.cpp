@@ -2,6 +2,7 @@
 #include <Windows.h>
 #include <vector>
 #include <iostream>
+#include "Cat.h"
 
 Map::Map(std::vector<std::vector<int>> Level)
 {
@@ -10,6 +11,10 @@ Map::Map(std::vector<std::vector<int>> Level)
 
 Map::~Map()
 {
+	while (Cats.size() > 0)
+	{
+		Destroy_Cat(0);
+	}
 }
 
 void Map::Draw_Maze()
@@ -58,7 +63,7 @@ void Map::Draw_Maze()
 			case Maze_variables.Cat:
 				Screen.SetColour(Screen.Green, Screen.Black);
 				std::cout << " ";
-				//enable_cats(X, Y);
+				enable_cats(X, Y);
 				break;
 			default:
 				break;
@@ -152,31 +157,35 @@ std::string Map::Get_Walls_String(int Tile)
 
 void Map::Update_Maze(int X, int Y, int tile)
 {
-	//Screen.Goto_XY(X, Y);
-	//std::cout << Get_Walls_String(tile);
+	Screen.Goto_XY(X, Y);
+	std::cout << Get_Walls_String(tile);
 	Walls[Y][X] = tile;
 }
 
 void Map::New_Maze(std::vector<std::vector<int>> Level)
 {
+	while (Cats.size() > 0)
+	{
+		Destroy_Cat(0);
+	}
 	Walls = Level;
 	Draw_Maze();
 }
 
-//std::vector<Cat*> Map::Get_Cats()
-//{
-//	return Cats;
-//}
-//
-//void Map::Destroy_Cat(int num)
-//{
-//	Cats.erase(Cats.begin() + num);
-//	Cats.shrink_to_fit();
-//}
-//
-//void Map::enable_cats(int x, int y)
-//{
-//	Cat *meowie = new Cat();
-//	Cats.push_back(meowie);
-//}
+std::vector<Cat*> Map::Get_Cats()
+{
+	return Cats;
+}
+
+void Map::Destroy_Cat(int num)
+{
+	Cats.erase(Cats.begin() + num);
+	Cats.shrink_to_fit();
+}
+
+void Map::enable_cats(int x, int y)
+{
+	Cat* meowie = new Cat(this, "¤", x, y);
+	Cats.push_back(meowie);
+}
 

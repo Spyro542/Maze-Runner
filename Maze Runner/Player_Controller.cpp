@@ -51,10 +51,10 @@ void Player_Controller::Update(Player* ptr_Player, Map* ptr_Map)
 		break;
 	}
 
-	if (Key.Get_Space())
+	/*if (Key.Get_Space())
 	{
 		while (Key.Get_Space()){}
 		ptr_Player->Update_Health(1);
-	}
+	}*/
 	
 }
