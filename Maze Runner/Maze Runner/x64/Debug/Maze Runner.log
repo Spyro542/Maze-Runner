@@ -1,8 +1,8 @@
 ﻿  Map.cpp
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Map.cpp(16,15): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Map.cpp(35,22): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Map.cpp(35,19): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Map.cpp(70,20): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Map.cpp(70,17): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Map.cpp(173,15): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Map.cpp(31,22): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Map.cpp(31,19): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Map.cpp(66,20): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\Map.cpp(66,17): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  Player_Controller.cpp
+  Generating Code...
   Maze Runner.vcxproj -> C:\Users\Sjefs\Desktop\Github Repos\Maze-Runner\Maze-Runner\Maze Runner\x64\Debug\Maze Runner.exe
