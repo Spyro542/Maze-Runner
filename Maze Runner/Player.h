@@ -7,7 +7,7 @@ class Player : public Character
 {
 public:
 	Player();
-	Player(Map *level, Menus *menu);
+	Player(Map *level, Menus *menu, Maze_Algorithm* algorithm);
 	void Update();
 
 

@@ -63,7 +63,7 @@ void Maze_Algorithm::Recursive()
 				Max_Pos.y1 = Pos.y - 1;
 				break;
 			}
-			if (rand() % 100 == 1)
+			if (rand() % 1000 == Random_door_frequency)
 			{
 				Level[Pos.y][Pos.x] = air;
 			}
@@ -355,6 +355,10 @@ void Maze_Algorithm::Spawn_collectibles()
 				if (rand() % 1000 < Default_coin_frequency)
 				{
 					Level[Y][X] = Coin;
+				}
+				else if (rand() % 1000 < Default_cat_frequency)
+				{
+					Level[Y][X] = Cat;
 				}
 				break;
 			default:

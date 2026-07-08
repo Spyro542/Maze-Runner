@@ -55,7 +55,7 @@
       <Filter>Classes</Filter>
     </ClCompile>
     <ClCompile Include="Cat.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Classes</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

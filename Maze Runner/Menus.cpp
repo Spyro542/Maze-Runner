@@ -78,7 +78,7 @@ void Menus::Main_Menu()
 	
 }
 
-void Menus::Game_Over(int score)
+void Menus::Game_Over(int score, int level)
 {
 	//setup
 	Terminal Screen;
@@ -134,9 +134,35 @@ void Menus::Game_Over(int score)
 		else { Screen.SetColour(Screen.Red, Screen.Black); }
 		std::cout << "Quit";
 		
+		int Base_hundred = 10;
+		int Offset = 0;
+		for (size_t i = 0; i < 50; i++)
+		{
+			if (score >= Base_hundred)
+			{
+				Offset++;
+				Base_hundred *= 100;
+			}
+		}
+
 		Screen.SetColour(Screen.Yellow, Screen.Black);
-		Screen.Goto_XY(75, 16);
+		Screen.Goto_XY(75 - Offset, 15);
 		std::cout << "Score: " << score;
+		
+		Base_hundred = 10;
+		Offset = 0;
+		for (size_t i = 0; i < 50; i++)
+		{
+			if (level >= Base_hundred)
+			{
+				Offset++;
+				Base_hundred *= 100;
+			}
+		}
+
+		Screen.SetColour(Screen.Yellow, Screen.Black);
+		Screen.Goto_XY(75 - Offset, 17);
+		std::cout << "Level: " << level;
 
 
 		if (Curr_Selection % 3 == 0 && Key.Get_Input() == Key.Enter)

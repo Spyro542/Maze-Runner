@@ -26,19 +26,22 @@ protected:
 	float Max_Health = 1;
 	float Health = Max_Health;
 	int Score = 0;
+	int Level = 1;
 	Menus* ptr_menu = nullptr;
 
 	Map *ptr_level = nullptr;
+	Maze_Algorithm* ptr_algorithm = nullptr;
 	bool Handle_Death = true;
 	bool UI = false;
 	std::vector<int> Position{ 1,1 };
 	std::vector<int> Return_Position{ 2,2 };
 	std::string Icon = "☺";
 	Terminal Screen;
-	enum Collectibe
+	enum Walkable_tiles
 	{
 		Coin = 100,
 		Heart = 101,
+		Exit = 11,
 	};
 	struct
 	{

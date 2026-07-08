@@ -11,7 +11,7 @@ void Character::Update_Health(float Damage_Value)
 	{
 		if (ptr_menu != nullptr)
 		{
-			ptr_menu->Game_Over(Score);
+			ptr_menu->Game_Over(Score, Level);
 		}
 		else
 		{
@@ -41,6 +41,11 @@ void Character::Update_UI()
 	std::cout << "Health:";
 	Screen.Goto_XY(130, 4);
 	Print_Healthbar();
+	
+	Screen.Goto_XY(130, 6);
+	std::cout << "Level:";
+	Screen.Goto_XY(130, 7);
+	std::cout << Level;
 }
 
 void Character::Print_Healthbar()
@@ -111,21 +116,34 @@ void Character::Update_Position(int Y, int X, std::string Last_Tile, int next_ti
 			Screen.Goto_XY(Position[0], Position[1]);
 			Screen.SetColour(Character_Colors.forground, Character_Colors.background);
 			std::cout << Icon;
-			
-			switch (next_tile) {
-			case Coin:
+			if (ptr_level != nullptr)
+			{
+				switch (next_tile) {
+				case Coin:
 
-				Score+= 10;
-				ptr_level->Update_Maze(Position[0], Position[1], 0);
-				Update_UI();
-				break;
-			case Heart:
-				Max_Health++;
-				Update_Health(-2);
-				ptr_level->Update_Maze(Position[0], Position[1], 0);
-				break;
-			default:
-				break;
+					Score += 10;
+					ptr_level->Update_Maze(Position[0], Position[1], 0);
+					if (UI)
+					{
+						Update_UI();
+					}
+					break;
+				case Heart:
+					Max_Health++;
+					Update_Health(-2);
+					ptr_level->Update_Maze(Position[0], Position[1], 0);
+					break;
+				case Exit:
+					Score += 100;
+					Level++;
+					ptr_algorithm->Recursive();
+					ptr_level->New_Maze(ptr_algorithm->Get_Level());
+					Update_UI();
+					Set_Position(Return_Position[0], Return_Position[1], ptr_level->Get_Walls_String(Position[0], Position[1]));
+					break;
+				default:
+					break;
+				}
 			}
 		}
 	}

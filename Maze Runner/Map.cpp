@@ -55,6 +55,11 @@ void Map::Draw_Maze()
 				Screen.SetColour(Screen.Red, Screen.Black);
 				std::cout << "♥";
 				break;
+			case Maze_variables.Cat:
+				Screen.SetColour(Screen.Green, Screen.Black);
+				std::cout << " ";
+				//enable_cats(X, Y);
+				break;
 			default:
 				break;
 			}
@@ -155,5 +160,23 @@ void Map::Update_Maze(int X, int Y, int tile)
 void Map::New_Maze(std::vector<std::vector<int>> Level)
 {
 	Walls = Level;
+	Draw_Maze();
 }
+
+//std::vector<Cat*> Map::Get_Cats()
+//{
+//	return Cats;
+//}
+//
+//void Map::Destroy_Cat(int num)
+//{
+//	Cats.erase(Cats.begin() + num);
+//	Cats.shrink_to_fit();
+//}
+//
+//void Map::enable_cats(int x, int y)
+//{
+//	Cat *meowie = new Cat();
+//	Cats.push_back(meowie);
+//}
 

@@ -1,6 +1,6 @@
 #include "Player.h"
 
-Player::Player(Map *level, Menus *menu)
+Player::Player(Map *level, Menus *menu, Maze_Algorithm *algorithm)
 {
 	UI = true;
 	Icon = menu->get_player_icon();
@@ -11,6 +11,7 @@ Player::Player(Map *level, Menus *menu)
 	Max_Health = 5;
 	Health = Max_Health;
 	Update_UI();
+	ptr_algorithm = algorithm;
 }
 
 void Player::Update()

@@ -32,6 +32,10 @@ public:
 		cracked = 2,
 		breakable = 2,
 	};
+	enum Movables
+	{
+		Cat = 50,
+	};
 
 
 private:
@@ -49,9 +53,11 @@ private:
 	enum Frequencies
 	{
 		Loot_room_coin_frequency = 30,		//out of 100
-		Default_coin_frequency = 5,		//out of 1000
+		Default_coin_frequency = 10,		//out of 1000
 		Loot_room_Heart_Amount = 1,
 		Loot_room_heart_frequency = 30, //out of 100
+		Random_door_frequency = 20, //out of 1000
+		Default_cat_frequency = 5, //out of 1000
 	};
 	enum Room_Sizes_and_logic
 	{

@@ -15,12 +15,14 @@
 #include "Player.h"
 #include "Player_Controller.h"
 #include "Menus.h"
+#include "Cat.h"
 
 
 char New_Screen[129][33];
 int New_Screen_Colour[129][33][2];
 std::vector<double> pos = { 1,1 };
 float movespeed = 150;
+float Timer = 0.0;
 bool quit = false;
 bool restart = false;
 bool Return_to_Menu = false;
@@ -67,17 +69,13 @@ int main()
 			Level_1_Map.Draw_Maze();	//Draw Level 1
 
 			//Place player
-			Player Active_Player(&Level_1_Map, &Menu);
+			Player Active_Player(&Level_1_Map, &Menu, &Maze_Generator);
 			Player_Controller Active_Player_controller(&Time, &Menu);
 
-			while (!restart)
+			/*for (size_t i = 0; i < Level_1_Map.Get_Cats().size() - 1; i++)
 			{
-				auto Frame_Start = clock();
-				Time.Start();
 
-				Active_Player_controller.Update(&Active_Player, &Level_1_Map);
-
-			}
+			}*/
 			restart = false;
 		}
 		Return_to_Menu = false;

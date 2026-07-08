@@ -11,7 +11,7 @@ public:
 	Menus(bool* quit, bool* restart, bool* Return_to_Menu);
 
 	void Main_Menu();
-	void Game_Over(int Score);
+	void Game_Over(int Score, int Level);
 	void Options();
 
 	void Quit();
