@@ -37,6 +37,12 @@ void Terminal::Intialize()
 	system("cls");
 }
 
+void Terminal::Clear_Screen()
+{
+	SetColour(Green, Black);
+	system("cls");
+}
+
 void Terminal::SetColour(int Text_Colour, int Background_Colour)
 {
 	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);

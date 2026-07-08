@@ -63,7 +63,14 @@ void Maze_Algorithm::Recursive()
 				Max_Pos.y1 = Pos.y - 1;
 				break;
 			}
-			Level[Pos.y][Pos.x] = wall;
+			if (rand() % 1000 == Random_door_frequency)
+			{
+				Level[Pos.y][Pos.x] = air;
+			}
+			else
+			{
+				Level[Pos.y][Pos.x] = wall;
+			}
 			Pos.y++;
 		}
 		Pos.y = Startpoint.y-1;
@@ -75,7 +82,14 @@ void Maze_Algorithm::Recursive()
 				Max_Pos.y0 = Pos.y + 1;
 				break;
 			}
-			Level[Pos.y][Pos.x] = wall;
+			if (rand() % 100 == 1)
+			{
+				Level[Pos.y][Pos.x] = air;
+			}
+			else
+			{
+				Level[Pos.y][Pos.x] = wall;
+			}
 			Pos.y--;
 		}
 		Pos.y = Startpoint.y;
@@ -88,7 +102,14 @@ void Maze_Algorithm::Recursive()
 				Max_Pos.x1 = Pos.x - 1;
 				break;
 			}
-			Level[Pos.y][Pos.x] = wall;
+			if (rand() % 100 == 1)
+			{
+				Level[Pos.y][Pos.x] = air;
+			}
+			else
+			{
+				Level[Pos.y][Pos.x] = wall;
+			}
 			Pos.x++;
 		}
 		Pos.x = Startpoint.x - 1;
@@ -100,7 +121,14 @@ void Maze_Algorithm::Recursive()
 				Max_Pos.x0 = Pos.x + 1;
 				break;
 			}
-			Level[Pos.y][Pos.x] = wall;
+			if (rand() % 100 == 1)
+			{
+				Level[Pos.y][Pos.x] = air;
+			}
+			else
+			{
+				Level[Pos.y][Pos.x] = wall;
+			}
 			Pos.x--;
 		}
 		//
@@ -290,13 +318,13 @@ void Maze_Algorithm::Generate_Rooms()
 			}
 			for (size_t X = 0; X <= Loot_room_size_x; X++)
 			{
-				Level[Test_pos.y - std::floor((float)Loot_room_size_y / 2)][Test_pos.x + X - std::floor((float)Loot_room_size_x / 2)] = breakable;
-				Level[Test_pos.y + Loot_room_size_y - std::floor((float)Loot_room_size_y / 2)][Test_pos.x + X - std::floor((float)Loot_room_size_x / 2)] = breakable;
+				Level[Test_pos.y - std::floor((float)Loot_room_size_y / 2)][Test_pos.x + X - std::floor((float)Loot_room_size_x / 2)] = air;
+				Level[Test_pos.y + Loot_room_size_y - std::floor((float)Loot_room_size_y / 2)][Test_pos.x + X - std::floor((float)Loot_room_size_x / 2)] = air;
 			}
 			for (size_t Y = 0; Y <= Loot_room_size_y; Y++)
 			{
-				Level[Test_pos.y + Y - std::floor((float)Loot_room_size_y / 2)][Test_pos.x - std::floor((float)Loot_room_size_x / 2)] = breakable;
-				Level[Test_pos.y + Y - std::floor((float)Loot_room_size_y / 2)][Test_pos.x + Loot_room_size_x - std::floor((float)Loot_room_size_x / 2)] = breakable;
+				Level[Test_pos.y + Y - std::floor((float)Loot_room_size_y / 2)][Test_pos.x - std::floor((float)Loot_room_size_x / 2)] = air;
+				Level[Test_pos.y + Y - std::floor((float)Loot_room_size_y / 2)][Test_pos.x + Loot_room_size_x - std::floor((float)Loot_room_size_x / 2)] = air;
 			}
 			break;
 		}
@@ -327,6 +355,10 @@ void Maze_Algorithm::Spawn_collectibles()
 				if (rand() % 1000 < Default_coin_frequency)
 				{
 					Level[Y][X] = Coin;
+				}
+				else if (rand() % 1000 < Default_cat_frequency)
+				{
+					Level[Y][X] = Cat;
 				}
 				break;
 			default:

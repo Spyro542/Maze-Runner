@@ -8,6 +8,7 @@ public:
 	void SetColour(int Text_Colour, int Background_Colour);
 	void Goto_XY(int X, int Y);
 	void Intialize();
+	void Clear_Screen();
 
 
 	enum Colour
